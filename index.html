@@ -3,385 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Тася Черняховская</title>
-<meta name="description" content="Тася Черняховская — коммуникационный дизайнер и иллюстратор: визуальные системы для брендов и событий с собственными персонажами и иллюстрациями">
+<title>Таисия Черняховская — Senior Marketing &amp; Web Designer</title>
+<meta name="description" content="Таисия Черняховская — Senior Marketing &amp; Web Designer: EdTech, key visual, рекламные системы, лендинги, Figma-системы и AI workflow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Тася Черняховская — коммуникационный дизайнер и иллюстратор">
-<meta property="og:description" content="Портфолио: Башня МГТУ им. Баумана, Doggo &amp; PuppyClub, личные проекты">
-<!-- После публикации замените SITE_URL на адрес сайта, например https://tasya.github.io -->
-<meta property="og:url" content="SITE_URL/">
-<meta property="og:image" content="SITE_URL/og.jpg">
+<meta property="og:title" content="Таисия Черняховская — Senior Marketing &amp; Web Designer">
+<meta property="og:description" content="Портфолио: EdTech, key visual, рекламные системы, лендинги, Figma-шаблоны и AI workflow">
+<!-- Публичный адрес сайта: https://tallety.ru -->
+<meta property="og:url" content="https://tallety.ru/">
+<meta property="og:image" content="https://tallety.ru/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/avatar.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap">
-<style>
-:root{
-  --bg:#f5f5f5; --ink:#171717; --muted:#999; --link:#6b4eff; --tile:#ebebeb; --sub:#6b6b6b; --line:#dedede;
-  --lilac:#6b4eff; --lime:#e1fb9e; --pink:#ffc9f1; --hl:var(--lime); --hl-fg:#171717;
-  --fs:clamp(17px, 0.9rem + 0.75vw, 24px);
-  --gap:clamp(12px, 1.9vw, 24px);
-  --block:clamp(32px, 3.75vw, 48px);
-  --section:clamp(64px, 8vw, 120px);
-  --fs-h:clamp(26px, 1rem + 1.9vw, 40px);
-  --measure:820px;
-  --r:24px;
-  --r2:24px;
-  --on-toast:#fff; --cur-lnk:rgba(107,78,255,.18);
-  color-scheme:light;
-}
-@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
-  --bg:#121214; --ink:#f1f0f3; --muted:#7c7b82; --link:#a593ff; --tile:#1f1e23; --sub:#a9a8b0; --line:#2a2930;
-  --on-toast:#121214; --cur-lnk:rgba(165,147,255,.22);
-  color-scheme:dark;
-} }
-:root[data-theme="dark"]{
-  --bg:#121214; --ink:#f1f0f3; --muted:#7c7b82; --link:#a593ff; --tile:#1f1e23; --sub:#a9a8b0; --line:#2a2930;
-  --on-toast:#121214; --cur-lnk:rgba(165,147,255,.22);
-  color-scheme:dark;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0; background:var(--bg); color:var(--ink);
-  font-family:ui-rounded,"SF Compact Rounded","SF Pro Rounded","Nunito",system-ui,-apple-system,sans-serif;
-  font-size:var(--fs); line-height:1.4; letter-spacing:-0.02em;
-  padding-inline:clamp(16px, 4vw, 40px); padding-block:40px;
-  -webkit-font-smoothing:antialiased;
-}
-.page{max-width:1280px; margin:0 auto; display:flex; flex-direction:column; gap:var(--section)}
-section, header{display:flex; flex-direction:column; gap:var(--gap)}
-header{position:relative}
-.theme{position:absolute; top:0; right:0; width:44px; height:44px; border:0; border-radius:50%; background:var(--tile); color:var(--ink); display:grid; place-items:center; cursor:pointer; transition:background-color .3s, color .3s}
-.theme:hover{color:var(--link)}
-.theme:focus-visible{outline:3px solid var(--link); outline-offset:3px}
-.theme svg{width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; grid-area:1/1}
-.theme .i-sun{display:none}
-.is-dark .theme .i-sun{display:block}
-.is-dark .theme .i-moon{display:none}
-p,ul,h1,h2,h3{margin:0}
-.b{font-weight:600}
-h1,h2{font-weight:600; text-wrap:balance}
-h1{font-size:var(--fs-h); line-height:1.15; letter-spacing:-0.03em}
-h2{font-size:var(--fs-h); line-height:1.15; letter-spacing:-0.03em; max-width:var(--measure)}
-.role{display:block; color:var(--sub); font-size:var(--fs); line-height:1.4; letter-spacing:-0.02em; margin-top:.35em; font-weight:600}
-.sec-head{display:flex; flex-direction:column; gap:var(--gap);}
-.text,.desc{max-width:var(--measure)}
-section > .sec-head{margin-bottom:calc(var(--block) - var(--gap))}
-.lead{max-width:var(--measure)}
-.stats{list-style:none; padding:0; margin:8px 0 0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--gap); max-width:1000px}
-.stats li{display:flex; flex-direction:column; gap:4px}
-.stats b{font-size:var(--fs-h); line-height:1.1; letter-spacing:-0.03em; font-weight:600}
-.stats span{color:var(--sub); font-size:.8em; line-height:1.35; letter-spacing:-0.01em}
-.case{display:flex; flex-direction:column; gap:var(--gap)}
-section > .case + .case{margin-top:calc(var(--block) - var(--gap))}
-.sub{display:flex; flex-direction:column; gap:2px; max-width:var(--measure)}
-.sub h3{margin:0; font-size:var(--fs); font-weight:600; line-height:1.4}
-.sub p{color:var(--sub); font-size:.8em; line-height:1.4; letter-spacing:-0.01em}
-.fig{margin:0; display:flex; flex-direction:column; gap:10px}
-.fig figcaption{color:var(--sub); font-size:.8em}
-.fig figcaption b{color:var(--link); font-weight:600; font-variant-numeric:tabular-nums; margin-right:.35em}
-@media (max-width:560px){ .stats{grid-template-columns:1fr; gap:12px} .stats li{flex-direction:row; align-items:baseline; gap:12px} .stats b{min-width:2.4em} }
-
-
-.avatar{width:128px; height:128px; border-radius:var(--r); overflow:hidden; background:var(--bg); flex:none; position:relative}
-.avatar img{position:absolute; left:-14px; top:-27px; width:184px; height:184px; max-width:none; object-fit:cover}
-.intro{display:flex; flex-direction:column; gap:8px}
-.intro .role{margin-top:0}
-.meta{color:var(--muted); font-weight:500}
-.when{display:block; color:var(--muted); font-size:var(--fs); line-height:1.4; letter-spacing:-0.02em; font-weight:500; margin-top:.15em}
-.links{display:flex; flex-wrap:wrap; gap:4px 24px}
-.links a{color:var(--link); text-decoration:none; font-weight:600; padding:0 .18em; margin:0 -.18em; border-radius:4px; background:linear-gradient(transparent 8%, var(--lilac) 8%, var(--lilac) 92%, transparent 92%) no-repeat 0 0 / 0% 100%; transition:background-size .25s ease, color .25s}
-.links a:hover,.links a:focus-visible{background-size:100% 100%; color:#fff}
-@media (prefers-reduced-motion:reduce){.links a{transition:none}}
-.links a:focus-visible, .shot:focus-visible{outline:3px solid var(--link); outline-offset:3px}
-.text{display:flex; flex-direction:column; gap:16px}
-.pitch{font-size:clamp(22px, 1rem + 1.2vw, 32px); line-height:1.25; letter-spacing:-0.03em; font-weight:600; text-wrap:balance}
-.desc p{margin-bottom:4px}
-.desc ul{padding-left:1.5em; margin:0}
-
-
-/* text selection in marker colors */
-::selection{background:#6b4eff; color:#fff}
-.links a::selection{color:#fff}
-#s-bashnya ::selection{background:#e1fb9e; color:#171717}
-#s-doggo ::selection{background:#ffc9f1; color:#171717}
-html,body{transition:background-color .3s, color .3s}
-@media (prefers-reduced-motion:reduce){html,body{transition:none}}
-/* marker highlights, as in the Bashnya slides */
-.hl{background:linear-gradient(transparent 8%, var(--hl) 8%, var(--hl) 92%, transparent 92%); padding:0 .18em; margin:0 -.06em; -webkit-box-decoration-break:clone; box-decoration-break:clone}
-.hl-lilac{--hl:var(--lilac); --hl-fg:#fff}
-#s-bashnya{--hl:var(--lime); --hl-fg:#171717}
-#s-doggo{--hl:var(--pink); --hl-fg:#171717}
-.hl,.sub h3 span,.stats b span{transition:color .35s}
-html:not(.mk-pre) :is(.hl,.sub h3 span,.stats b span), .mk-pre :is(.hl,.sub h3 span,.stats b span).mk-in{color:var(--hl-fg)}
-.sub h3 span{background:linear-gradient(transparent 8%, var(--hl) 8%, var(--hl) 92%, transparent 92%); padding:0 .2em; margin-left:-.2em; -webkit-box-decoration-break:clone; box-decoration-break:clone}
-.stats b{font-variant-numeric:tabular-nums}
-.stats b span{color:inherit; font-size:inherit; letter-spacing:inherit; line-height:inherit; background:linear-gradient(transparent 10%, var(--hl) 10%, var(--hl) 90%, transparent 90%); padding:0 .12em; margin-left:-.12em}
-
-
-/* image tiles */
-.shot{
-  display:block; position:relative; width:100%; max-width:100%; overflow:hidden;
-  border-radius:var(--r); background:var(--tile); cursor:zoom-in; padding:0; border:0;
-}
-.shot img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s cubic-bezier(.2,.7,.2,1)}
-.shot:hover img{transform:scale(1.025)}
-.r2 .shot{border-radius:var(--r2)}
-.shot:focus-visible{outline-offset:-4px}
-.sq{aspect-ratio:1}
-
-.grid{display:grid; gap:var(--gap); width:100%}
-.g-a{grid-template-columns:1fr 1fr}
-.g-a .quad{display:grid; grid-template-columns:1fr 1fr; gap:var(--gap)}
-.g-b{grid-template-columns:628fr 302fr 302fr; align-items:start}
-.g-b .big{grid-row:span 2}
-.g-3{grid-template-columns:repeat(3,1fr)}
-.g-pair{grid-template-columns:1fr 1fr}
-.g-pair.wide{gap:calc(var(--gap)*2)}
-.g-d1{grid-template-columns:666fr 590fr}
-.g-d2{grid-template-columns:666fr 590fr}
-.g-p{grid-template-columns:536fr 720fr}
-
-.foot{display:flex; flex-direction:column; gap:var(--block);}
-.foot-cta{display:flex; flex-direction:column; gap:16px}
-.copy{color:var(--muted); font-weight:500}
-
-@media (max-width:720px){
-  body{padding-block:24px}
-  .avatar{width:96px; height:96px; border-radius:24px}
-  .avatar img{left:-10.5px; top:-20px; width:138px; height:138px}
-  .g-a{grid-template-columns:1fr}
-  .g-b,.g-3{grid-template-columns:1fr 1fr}
-  .g-b .big{grid-column:1 / -1; grid-row:auto}
-  .g-b .m-full{grid-column:1 / -1; order:5}
-  .g-3 > :last-child{grid-column:1 / -1}
-  .g-pair.wide{gap:var(--gap)}
-}
-@media (max-width:480px){
-  .g-d1,.g-d2,.g-p{grid-template-columns:1fr}
-}
-
-.copy-mail{position:relative}
-.toast{position:fixed; left:50%; bottom:calc(24px + env(safe-area-inset-bottom,0px)); transform:translate(-50%,12px); z-index:200;
-  background:var(--ink); color:var(--on-toast); font-size:16px; letter-spacing:0; font-weight:500; padding:10px 18px; border-radius:999px;
-  opacity:0; pointer-events:none; transition:opacity .2s, transform .2s}
-.toast.show{opacity:1; transform:translate(-50%,0)}
-
-/* motion */
-.shot img{opacity:0; transition:opacity .6s ease, transform .5s cubic-bezier(.2,.7,.2,1)}
-.shot img.ld{opacity:1}
-.hl,.sub h3 span,.stats b span{background-repeat:no-repeat; background-size:100% 100%}
-.mk-pre .hl,.mk-pre .sub h3 span,.mk-pre .stats b span{background-size:0% 100%}
-.mk-ready .hl,.mk-ready .sub h3 span,.mk-ready .stats b span{transition:background-size .7s cubic-bezier(.65,0,.35,1)}
-.mk-pre .hl.mk-in,.mk-pre .sub h3 span.mk-in,.mk-pre .stats b span.mk-in{background-size:100% 100%}
-.lb-stage img.flip{transition:transform .38s cubic-bezier(.2,.8,.2,1), border-radius .38s}
-@media (prefers-reduced-motion:reduce){ .shot img{transition:none} .mk-pre .hl,.mk-pre .sub h3 span,.mk-pre .stats b span{transition:none; background-size:100% 100%} .lb-stage img.flip{transition:none} }
-
-/* custom cursor (mouse / trackpad only) */
-.cur{position:fixed; left:0; top:0; translate:-200px -200px; z-index:300; pointer-events:none; width:12px; height:12px; margin:-6px 0 0 -6px; border-radius:50%;
-  background:var(--link); display:grid; place-items:center; opacity:0;
-  transition:width .25s cubic-bezier(.2,.8,.2,1), height .25s cubic-bezier(.2,.8,.2,1), margin .25s cubic-bezier(.2,.8,.2,1), background-color .2s, opacity .2s}
-.cur span{font-size:14px; font-weight:600; letter-spacing:0; color:var(--ink); opacity:0; transition:opacity .15s; white-space:nowrap}
-.cur.on{opacity:1}
-.cur.img{width:84px; height:84px; margin:-42px 0 0 -42px}
-.cur span{transition:opacity .15s, color .2s}
-.cur.img span{opacity:1}
-.cur.lnk{width:auto; height:34px; margin:0; transform:translate(-50%,-50%); padding:0 14px; border-radius:999px; background:var(--link); transition:margin .25s cubic-bezier(.2,.8,.2,1), background-color .2s, opacity .2s}
-.cur.lnk span{opacity:1; color:#fff; font-size:14px}
-.is-dark .cur.lnk span{color:#121214}
-.cur.down{scale:.88}
-@media (hover:hover) and (pointer:fine){
-  html.has-cur, html.has-cur a, html.has-cur button.shot{cursor:none}
-  html.has-cur .lb, html.has-cur .lb *{cursor:auto}
-}
-
-/* status */
-.status{display:inline-flex; align-items:flex-start; gap:10px; margin-top:6px; padding:8px 16px 8px 14px; border-radius:18px; background:var(--tile);
-  font-size:.72em; font-weight:500; line-height:1.4; letter-spacing:-0.01em; color:var(--sub); max-width:100%; align-self:flex-start}
-.status b{color:var(--ink); font-weight:600}
-.status i{flex:none; width:9px; height:9px; border-radius:50%; background:#34c759; margin-top:.45em; box-shadow:0 0 0 0 rgba(52,199,89,.5); animation:ping 2.4s ease-out infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(52,199,89,.45)}70%,100%{box-shadow:0 0 0 8px rgba(52,199,89,0)}}
-/* sticky section nav */
-section,footer{scroll-margin-top:90px}
-.snav{position:fixed; z-index:50; left:50%; top:calc(14px + env(safe-area-inset-top,0px)); translate:-50% -140%; opacity:0;
-  display:flex; gap:2px; padding:5px; border-radius:999px; background:color-mix(in srgb, var(--bg-cur,var(--bg)) 78%, transparent);
-  -webkit-backdrop-filter:blur(14px) saturate(1.4); backdrop-filter:blur(14px) saturate(1.4);
-  box-shadow:0 0 0 1px var(--line), 0 8px 24px rgba(0,0,0,.08); transition:translate .35s cubic-bezier(.2,.8,.2,1), opacity .25s}
-.snav.show{translate:-50% 0; opacity:1}
-.snav a{font-size:16px; font-weight:600; letter-spacing:-0.01em; color:var(--sub); text-decoration:none; padding:7px 14px; border-radius:999px; transition:background-color .2s, color .2s; white-space:nowrap}
-.snav a:hover{color:var(--ink)}
-.snav a.act{background:var(--lilac); color:#fff}
-.snav a:focus-visible{outline:2px solid var(--link); outline-offset:2px}
-@media (max-width:480px){ .snav a{font-size:14px; padding:6px 10px} }
-@media (prefers-reduced-motion:reduce){ .snav{transition:opacity .2s} .status i{animation:none} }
-
-/* sketch -> 3D morph */
-.morph-stage{position:relative; aspect-ratio:16/9; border-radius:var(--r); background:#fff; overflow:hidden}
-.morph-stage .shot{position:absolute; inset:0; width:100%; height:100%; background:#fff !important; border-radius:var(--r)}
-.morph-stage .shot img{object-fit:contain; padding:4%}
-.morph-stage .m-b{opacity:0; pointer-events:none; transition:opacity .7s ease}
-.morph-stage .m-a img.ld{transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
-.morph.is-b .m-b{opacity:1; pointer-events:auto}
-.morph.is-b .m-a{pointer-events:none}
-.morph.is-b .m-a img.ld{opacity:0; transform:scale(.96) rotate(-2deg)}
-.morph .m-b img{transform:scale(1.04) rotate(2deg); transition:opacity .6s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
-.morph.is-b .m-b img{transform:none}
-.steps{display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px}
-.steps .step{font:inherit; color:var(--sub); background:none; border:0; padding:2px 8px; margin:-2px -8px; border-radius:8px; cursor:pointer; transition:color .2s, background-color .2s}
-.steps .step b{color:var(--link); font-weight:600; margin-right:.35em}
-.steps .step.on{color:var(--ink); background:var(--tile)}
-.steps .step:focus-visible{outline:2px solid var(--link); outline-offset:2px}
-.steps .arr{color:var(--muted)}
-.steps .hint{color:var(--muted); margin-left:auto; font-size:.9em}
-@media (hover:none){ .steps .hint{display:none} }
-@media (prefers-reduced-motion:reduce){ .morph-stage .m-b,.morph-stage .shot img{transition:none !important} .morph .m-b img,.morph.is-b .m-a img.ld{transform:none} }
-/* card tilt */
-.tilt{transition:transform .5s cubic-bezier(.2,.8,.2,1)}
-.tilt.tilting{transition:transform .08s linear}
-.tilt::after{content:""; position:absolute; inset:0; pointer-events:none; border-radius:inherit; opacity:0; transition:opacity .3s;
-  background:radial-gradient(circle at var(--gx,50%) var(--gy,50%), rgba(255,255,255,.45), rgba(255,255,255,0) 55%); mix-blend-mode:soft-light}
-.tilt.tilting::after{opacity:1}
-/* paw prints */
-.paw{position:fixed; left:0; top:0; z-index:40; width:22px; height:22px; margin:-11px 0 0 -11px; pointer-events:none; color:#ff5fd2; opacity:.85; animation:pawfade 1.3s ease-out forwards}
-.is-dark .paw{color:#ff7fdc}
-@keyframes pawfade{0%{opacity:0; scale:.6}12%{opacity:.85; scale:1}70%{opacity:.6}100%{opacity:0; scale:.9}}
-
-/* footer CTA */
-.foot-cta{gap:14px}
-.foot-sub{color:var(--sub); max-width:var(--measure)}
-.btns{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
-.btn{display:inline-flex; align-items:center; gap:.4em; height:56px; padding:0 24px; border-radius:999px; font-weight:600; font-size:.85em; letter-spacing:-0.01em;
-  text-decoration:none; color:var(--ink); background:var(--tile); transition:background-color .2s, color .2s, transform .2s}
-.btn:hover{background:var(--lilac); color:#fff}
-.btn.primary{background:var(--link); color:#fff}
-.is-dark .btn.primary{color:#121214}
-.btn.primary:hover{background:var(--ink); color:var(--bg)}
-.btn:active{transform:scale(.97)}
-.btn:focus-visible{outline:3px solid var(--link); outline-offset:3px}
-.foot-meta{color:var(--muted); font-size:.8em}
-.foot-bottom{display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap}
-.totop{font:inherit; font-weight:500; color:var(--muted); background:none; border:0; padding:4px 0; cursor:pointer; transition:color .2s}
-.totop:hover{color:var(--link)}
-.totop:focus-visible{outline:2px solid var(--link); outline-offset:3px; border-radius:4px}
-@media (max-width:560px){ .btn{height:52px; width:100%; justify-content:center} }
-
-/* hero with collage */
-header{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,440px); gap:var(--gap) clamp(24px,4vw,64px); align-items:start}
-.hero-l{display:flex; flex-direction:column; gap:var(--gap); min-width:0}
-.collage{position:relative; height:470px; margin-top:64px}
-.hcard{position:absolute; width:230px; aspect-ratio:1; padding:0; border:0; border-radius:var(--r); overflow:hidden; background:var(--tile); cursor:zoom-in;
-  box-shadow:0 10px 30px rgba(20,10,40,.14); transition:transform .55s cubic-bezier(.2,.8,.2,1), box-shadow .3s}
-.hcard img{width:100%; height:100%; object-fit:cover; display:block}
-.hc1{left:0;   top:20px;  transform:rotate(-9deg); z-index:1}
-.hc2{left:120px; top:0;   transform:rotate(5deg);  z-index:2}
-.hc3{left:40px; top:190px; transform:rotate(3deg); z-index:3}
-.hc4{left:200px; top:170px; transform:rotate(-6deg); z-index:4}
-.hc5{left:110px; top:95px; transform:rotate(-1deg); z-index:5}
-.collage:hover .hc1{transform:translate(-40px,-24px) rotate(-14deg)}
-.collage:hover .hc2{transform:translate(46px,-30px) rotate(10deg)}
-.collage:hover .hc3{transform:translate(-50px,30px) rotate(-3deg)}
-.collage:hover .hc4{transform:translate(50px,34px) rotate(-10deg)}
-.collage:hover .hc5{transform:translate(0,-6px) rotate(2deg)}
-.collage .hcard:hover{box-shadow:0 18px 44px rgba(20,10,40,.24); z-index:9; scale:1.04}
-.hcard:focus-visible{outline:3px solid var(--link); outline-offset:3px; z-index:9}
-.clip{position:absolute; left:250px; top:70px; width:26px; z-index:10; fill:none; stroke:var(--link); stroke-width:4.5; stroke-linecap:round; transform:rotate(18deg); pointer-events:none; transition:transform .55s cubic-bezier(.2,.8,.2,1)}
-.collage:hover .clip{transform:translate(0,-8px) rotate(24deg)}
-.is-dark .hcard{box-shadow:0 10px 30px rgba(0,0,0,.45)}
-@media (max-width:1000px){
-  header{grid-template-columns:1fr}
-  .collage{height:300px; margin-top:8px; max-width:440px; width:100%; justify-self:center}
-  .hcard{width:150px}
-  .hc1{left:4%; top:30px} .hc2{left:36%; top:6px} .hc3{left:12%; top:130px} .hc4{left:58%; top:120px} .hc5{left:34%; top:70px}
-  .clip{left:64%; top:40px; width:20px}
-  .collage:hover .hcard{transform:none} .collage:hover .clip{transform:rotate(18deg)}
-}
-@media (prefers-reduced-motion:reduce){ .hcard,.clip{transition:none} }
-/* section tint */
-body{background:var(--bg-cur,var(--bg)); transition:background-color .7s ease, color .3s}
-html[data-sec="s-bashnya"]{--bg-cur:color-mix(in srgb, var(--bg) 86%, #e1fb9e)}
-html[data-sec="s-doggo"]{--bg-cur:color-mix(in srgb, var(--bg) 88%, #ffc9f1)}
-html[data-sec="s-personal"],html[data-sec="contacts"]{--bg-cur:color-mix(in srgb, var(--bg) 92%, #6b4eff)}
-.is-dark[data-sec="s-bashnya"]{--bg-cur:color-mix(in srgb, var(--bg) 93%, #e1fb9e)}
-.is-dark[data-sec="s-doggo"]{--bg-cur:color-mix(in srgb, var(--bg) 92%, #ffc9f1)}
-.is-dark[data-sec="s-personal"],.is-dark[data-sec="contacts"]{--bg-cur:color-mix(in srgb, var(--bg) 88%, #6b4eff)}
-@media (prefers-reduced-motion:reduce){ body{transition:none} }
-/* lightbox */
-.lb{position:fixed; inset:0; z-index:100; background:rgba(12,12,12,.94); display:flex; align-items:center; justify-content:center;
-  opacity:0; visibility:hidden; transition:opacity .2s, visibility .2s; touch-action:pan-x pan-y pinch-zoom}
-.lb.open{opacity:1; visibility:visible}
-.lb.closing{background:rgba(12,12,12,0); transition:background .3s}
-.lb.closing button,.lb.closing .lb-count{opacity:0; transition:opacity .15s}
-.lb-stage{position:absolute; inset:0; overflow:auto; display:flex; align-items:center; justify-content:center;
-  padding:calc(64px + env(safe-area-inset-top,0px)) 72px calc(64px + env(safe-area-inset-bottom,0px))}
-.lb-stage img{max-width:100%; max-height:100%; object-fit:contain; border-radius:12px; cursor:zoom-in; user-select:none; -webkit-user-drag:none}
-.lb.zoomed .lb-stage{display:block; padding:0}
-.lb.zoomed .lb-stage img{max-width:none; max-height:none; width:auto; border-radius:0; cursor:zoom-out; margin:auto; display:block}
-.lb button{position:absolute; z-index:2; border:0; background:rgba(255,255,255,.12); color:#fff; width:48px; height:48px; border-radius:50%;
-  display:grid; place-items:center; cursor:pointer; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); transition:background .15s}
-.lb button:hover{background:rgba(255,255,255,.24)}
-.lb button:focus-visible{outline:2px solid #fff; outline-offset:2px}
-.lb button svg{width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
-.lb-close{top:calc(12px + env(safe-area-inset-top,0px)); right:12px}
-.lb-zoom{top:calc(12px + env(safe-area-inset-top,0px)); right:68px}
-.lb-prev{left:12px; top:50%; transform:translateY(-50%)}
-.lb-next{right:12px; top:50%; transform:translateY(-50%)}
-.lb-count{position:absolute; left:50%; transform:translateX(-50%); bottom:calc(18px + env(safe-area-inset-bottom,0px)); color:rgba(255,255,255,.7);
-  font-size:15px; letter-spacing:0; font-variant-numeric:tabular-nums; z-index:2}
-@media (max-width:720px){
-  .lb-stage{padding:64px 12px}
-  .lb-prev,.lb-next{top:auto; transform:none; bottom:calc(8px + env(safe-area-inset-bottom,0px))}
-  .lb-count{bottom:calc(22px + env(safe-area-inset-bottom,0px))}
-}
-@media (prefers-reduced-motion:reduce){ .shot img, .lb{transition:none} .shot:hover img{transform:none} }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="assets/css/main.css?v=20260923-7">
 </head>
 <body>
 
 <nav class="snav" id="snav" aria-label="Разделы">
   <a href="#s-bashnya" data-s="s-bashnya">Башня</a>
   <a href="#s-doggo" data-s="s-doggo">Doggo</a>
-  <a href="#s-personal" data-s="s-personal">Личное</a>
   <a href="#contacts" data-s="contacts">Контакты</a>
 </nav>
 <div class="page">
   <header>
     <button class="theme" id="themeBtn" type="button" aria-label="Переключить тему"><svg class="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
     <div class="hero-l">
-    <div class="avatar"><img src="img/avatar.webp" alt="Тася Черняховская"></div>
+    <div class="avatar"><img src="img/avatar.webp" width="368" height="368" alt="Таисия Черняховская"></div>
     <div class="intro b">
-      <h1>Тася Черняховская</h1>
-      <p class="role">Коммуникационный дизайнер и иллюстратор</p>
+      <h1>Таисия Черняховская</h1>
+      <p class="role">Senior Marketing &amp; Web Designer</p>
       <p class="meta">Екатеринбург · GMT+5<span class="clock-wrap" hidden> · сейчас <span class="clock"></span></span></p>
       <nav class="links" aria-label="Контакты">
-        <a class="cv-link" href="Tasia_Chernyakhovskaya_CV.pdf" target="_blank" rel="noopener" data-cur="PDF ↗">CV</a>
-        <a href="https://t.me/tallety" target="_blank" rel="noopener" data-cur="Написать ↗">Telegram</a>
-        <a class="copy-mail" href="mailto:heytallety@gmail.com" data-cur="Скопировать">heytallety@gmail.com</a>
+        <a class="cv-link" href="cv.html">CV</a>
+        <a href="https://t.me/tallety" target="_blank" rel="noopener">Telegram</a>
+        <a class="copy-mail" href="mailto:heytallety@gmail.com">heytallety@gmail.com</a>
       </nav>
-      <p class="status"><i aria-hidden="true"></i><span><b>Открыта к предложениям:</b> коммуникационный дизайн и иллюстрация · full‑time или проекты · удалённо</span></p>
+      <p class="status"><i aria-hidden="true"></i><span><b>Открыта к предложениям:</b> marketing design, web design и визуальные системы · удалённо</span></p>
     </div>
     <div class="text">
-      <p class="pitch">Создаю визуальные системы для брендов и событий — и сама рисую для них персонажей и иллюстрации.</p>
-      <p>4 года опыта. Сейчас веду визуальное направление Башни при МГТУ им. Баумана: от концепции и гайда до арт-дирекшна младшего дизайнера. Партнёрские проекты с <span class="hl hl-lilac">Яндексом, Ozon, Авито, Сбером, Т‑Банком, VK и ВТБ</span>.</p>
+      <p class="pitch">Создаю key visual, рекламные системы и лендинги для EdTech и digital‑продуктов.</p>
+      <p>Масштабирую концепции на контент, шаблоны, веб‑интерфейсы и офлайн‑носители. Выстраиваю визуальные правила, документирую решения и провожу дизайн‑ревью. 4 года опыта в цифровых коммуникациях, брендинге и иллюстрации.</p>
+      <ul class="expertise" aria-label="Ключевые специализации">
+        <li>EdTech</li><li>Key Visual</li><li>Campaign Systems</li><li>Figma Systems</li><li>Landing Pages</li><li>Web/UI</li><li>AI-assisted Design</li><li>Design QA</li><li>Photoshop</li><li>Framer</li><li>Tilda</li><li>English B2</li>
+      </ul>
+      <p>В «Башне» при МГТУ им. Баумана отвечаю за визуальное направление, шаблоны, документацию и дизайн‑ревью. Партнёрские проекты с <span class="hl hl-lilac">Яндексом, Ozon, Авито, Сбером, Т‑Банком, VK и ВТБ</span>.</p>
     </div>
     </div>
     <div class="collage" id="collage" aria-label="Избранные работы">
-      <button class="hcard hc1" type="button" data-open="img/b01.webp" aria-label="Открыть: Серия «Менторы в Башне»"><img src="img/s/b01-600.webp" alt="" decoding="async"></button>
-      <button class="hcard hc2" type="button" data-open="img/d01.webp" aria-label="Открыть: Иллюстрации Doggo"><img src="img/s/d01-600.webp" alt="" decoding="async"></button>
-      <button class="hcard hc3" type="button" data-open="img/b16.webp" aria-label="Открыть: 3D‑кубик Башни"><img src="img/s/b16-600.webp" alt="" decoding="async"></button>
-      <button class="hcard hc4" type="button" data-open="img/d03.webp" aria-label="Открыть: Стикерпак PuppyClub"><img src="img/s/d03-600.webp" alt="" decoding="async"></button>
-      <button class="hcard hc5" type="button" data-open="img/p02.webp" aria-label="Открыть: Иллюстрированный календарь"><img src="img/s/p02-600.webp" alt="" decoding="async"></button>
-      <svg class="clip" viewBox="0 0 40 90" aria-hidden="true"><path d="M14 30V14a8 8 0 0 1 16 0v52a12 12 0 0 1-24 0V22"/></svg>
+      <button class="hcard hc1" type="button" data-open="img/b01.webp" aria-label="Открыть: Серия «Менторы в Башне»"><img src="img/s/b01-600.webp" width="600" height="600" alt="" decoding="async"></button>
+      <button class="hcard hc2" type="button" data-open="img/b14.webp" aria-label="Открыть: Концепция первого экрана лендинга Башни"><img src="img/s/b14-600.webp" width="600" height="338" alt="" decoding="async"></button>
+      <button class="hcard hc3" type="button" data-open="img/b06.webp" aria-label="Открыть: Контентная серия о GenAI"><img src="img/s/b06-600.webp" width="600" height="600" alt="" decoding="async"></button>
+      <button class="hcard hc4" type="button" data-open="img/d07.webp" aria-label="Открыть: Рекламная кампания Doggo"><img src="img/s/d07-600.webp" width="600" height="289" alt="" decoding="async"></button>
+      <button class="hcard hc5" type="button" data-open="img/b16.webp" aria-label="Открыть: 3D‑символ бренда Башни"><img src="img/s/b16-600.webp" width="600" height="600" alt="" decoding="async"></button>
+      <button class="hcard hc6" type="button" data-open="img/works/doggo/package.webp" aria-label="Открыть: Упаковка биопакетов Doggo"><img src="img/s/works/doggo/package-600.webp" width="600" height="448" alt="" decoding="async"></button>
+      <button class="hcard hc7" type="button" data-open="img/works/doggo/puppyclub-site.webp" aria-label="Открыть: Сайт PuppyClub"><img src="img/s/works/doggo/puppyclub-site-600.webp" width="600" height="387" alt="" decoding="async"></button>
+      <button class="hcard hc8" type="button" data-open="img/works/doggo/window-art-02.webp" aria-label="Открыть: Оформление витрины Doggo"><img src="img/s/works/doggo/window-art-02-600.webp" width="600" height="800" alt="" decoding="async"></button>
     </div>
   </header>
 
+  <main>
   <section id="s-bashnya" aria-labelledby="bashnya">
     <div class="sec-head">
-      <h2 id="bashnya">Башня, МГТУ им.&nbsp;Н.Э.&nbsp;Баумана<span class="role">Ведущий коммуникационный дизайнер</span><span class="when">апрель 2024 — настоящее время</span></h2>
-      <p class="lead">Образовательный стартап при МГТУ: курсы, конференции и хакатоны с IT‑компаниями. Отвечаю за визуальное направление, гайд по айдентике и дизайн-ревью, курирую младшего дизайнера.</p>
+      <h2 id="bashnya">Башня: key visual и визуальная система EdTech‑бренда<span class="role">Ведущий коммуникационный дизайнер</span><span class="when">апрель 2024 — настоящее время</span></h2>
+      <p class="lead">Образовательный проект при МГТУ им. Н.Э. Баумана: курсы, конференции и хакатоны с IT‑компаниями. Отвечаю за key visual, рекламные серии, лендинги, шаблоны, документацию и дизайн‑ревью, курирую младшего дизайнера.</p>
+      <div class="project-links"><a href="https://www.bashnya-education.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта «Башня» <span aria-hidden="true">↗</span></a></div>
       <ul class="stats">
         <li><b><span>20+</span></b><span>визуальных концепций мероприятий</span></li>
         <li><b><span>15+</span></b><span>шаблонов для соцсетей, презентаций и печати</span></li>
@@ -389,405 +77,281 @@ html[data-sec="s-personal"],html[data-sec="contacts"]{--bg-cur:color-mix(in srgb
       </ul>
     </div>
 
-    <div class="case">
-      <div class="sub"><h3><span>Менторы в Башне</span></h3><p>Одна концепция обложки, разложенная в шаблон карточек: фото, рубрика от руки и цитата ментора</p></div>
+    <div class="case" data-priority="1">
+      <div class="sub"><h3><span>Менторы в Башне: key visual и серия материалов</span></h3><p>Разработала key visual и масштабировала его в шаблон карточек: фото, рукописная рубрика и цитата ментора</p></div>
       <div class="grid g-a">
-        <button class="shot sq" data-c="#c8c2ce" data-src="img/b01.webp" data-alt="Обложка серии «Менторы в Башне»" aria-label="Открыть: Обложка серии «Менторы в Башне»"></button>
+        <button type="button" class="shot sq" data-c="#c8c2ce" data-src="img/b01.webp" data-alt="Обложка серии «Менторы в Башне»" aria-label="Открыть: Обложка серии «Менторы в Башне»"></button>
         <div class="quad">
-          <button class="shot sq" data-c="#d3ccd4" data-src="img/b02.webp" data-alt="Карточка ментора: Екатерина Шевченко, аналитика" aria-label="Открыть: Карточка ментора: Екатерина Шевченко, аналитика"></button>
-          <button class="shot sq" data-c="#dcd7e3" data-src="img/b03.webp" data-alt="Карточка ментора: Роберт Хаджиев, менеджмент" aria-label="Открыть: Карточка ментора: Роберт Хаджиев, менеджмент"></button>
-          <button class="shot sq" data-c="#cbc3d5" data-src="img/b04.webp" data-alt="Карточка ментора: Владимир Пресняков, менеджмент" aria-label="Открыть: Карточка ментора: Владимир Пресняков, менеджмент"></button>
-          <button class="shot sq" data-c="#d9d2e7" data-src="img/b05.webp" data-alt="Карточка ментора: Владимир Лунев, аналитика" aria-label="Открыть: Карточка ментора: Владимир Лунев, аналитика"></button>
+          <button type="button" class="shot sq" data-c="#d3ccd4" data-src="img/b02.webp" data-alt="Карточка ментора: Екатерина Шевченко, аналитика" aria-label="Открыть: Карточка ментора: Екатерина Шевченко, аналитика"></button>
+          <button type="button" class="shot sq" data-c="#dcd7e3" data-src="img/b03.webp" data-alt="Карточка ментора: Роберт Хаджиев, менеджмент" aria-label="Открыть: Карточка ментора: Роберт Хаджиев, менеджмент"></button>
+          <button type="button" class="shot sq" data-c="#cbc3d5" data-src="img/b04.webp" data-alt="Карточка ментора: Владимир Пресняков, менеджмент" aria-label="Открыть: Карточка ментора: Владимир Пресняков, менеджмент"></button>
+          <button type="button" class="shot sq" data-c="#d9d2e7" data-src="img/b05.webp" data-alt="Карточка ментора: Владимир Лунев, аналитика" aria-label="Открыть: Карточка ментора: Владимир Лунев, аналитика"></button>
         </div>
       </div>
     </div>
 
-    <div class="case">
-      <div class="sub"><h3><span>Как удержать проект под контролем</span></h3><p>Сложную тему о рисках в GenAI‑проектах упаковала в карусель с персонажем-роботом</p></div>
+    <div class="case" data-priority="6">
+      <div class="sub"><h3><span>Контентная серия о рисках в GenAI</span></h3><p>Упаковала сложную тему в последовательную карусель: сама придумала и нарисовала персонажа‑робота, который связывает обложку и информационные слайды</p></div>
       <div class="grid g-b">
-        <button class="shot sq big" data-c="#dce798" data-src="img/b06.webp" data-alt="Обложка карусели «Как удержать проект под контролем» с роботом" aria-label="Открыть: Обложка карусели «Как удержать проект под контролем» с роботом"></button>
-        <button class="shot sq" data-c="#c7db92" data-src="img/b07.webp" data-alt="Слайд карусели о стратегиях работы с рисками" aria-label="Открыть: Слайд карусели о стратегиях работы с рисками"></button>
-        <button class="shot sq m-full" data-c="#d5e99a" data-src="img/b09.webp" data-alt="Слайд карусели о мониторинге и логировании" aria-label="Открыть: Слайд карусели о мониторинге и логировании"></button>
-        <button class="shot sq" data-c="#d3e89e" data-src="img/b08.webp" data-alt="Слайд карусели о системе контроля" aria-label="Открыть: Слайд карусели о системе контроля"></button>
+        <button type="button" class="shot sq big" data-c="#dce798" data-src="img/b06.webp" data-alt="Обложка карусели «Как удержать проект под контролем» с роботом" aria-label="Открыть: Обложка карусели «Как удержать проект под контролем» с роботом"></button>
+        <button type="button" class="shot sq" data-c="#c7db92" data-src="img/b07.webp" data-alt="Слайд карусели о стратегиях работы с рисками" aria-label="Открыть: Слайд карусели о стратегиях работы с рисками"></button>
+        <button type="button" class="shot sq m-full" data-c="#d5e99a" data-src="img/b09.webp" data-alt="Слайд карусели о мониторинге и логировании" aria-label="Открыть: Слайд карусели о мониторинге и логировании"></button>
+        <button type="button" class="shot sq" data-c="#d3e89e" data-src="img/b08.webp" data-alt="Слайд карусели о системе контроля" aria-label="Открыть: Слайд карусели о системе контроля"></button>
       </div>
     </div>
 
-    <div class="case">
-      <div class="sub"><h3><span>Как получить работу в IT?</span></h3><p>Анонс занятия с менторами: обложка задаёт образ, слайды продолжают его в тексте</p></div>
-      <button class="shot" style="aspect-ratio:1280/909" data-c="#c8bfd8" data-src="img/b10.webp" data-alt="Обложка «Как получить работу в IT?» с клавиатурой и клавишами" aria-label="Открыть: Обложка «Как получить работу в IT?» с клавиатурой и клавишами"></button>
+    <div class="case" data-priority="7">
+      <div class="sub"><h3><span>Кампания о карьере в IT</span></h3><p>Создала key visual для анонса занятия и развила его в серию контентных слайдов</p></div>
+      <button type="button" class="shot" style="aspect-ratio:1280/909" data-c="#c8bfd8" data-src="img/b10.webp" data-alt="Обложка «Как получить работу в IT?» с клавиатурой и клавишами" aria-label="Открыть: Обложка «Как получить работу в IT?» с клавиатурой и клавишами"></button>
       <div class="grid g-3">
-        <button class="shot sq" data-c="#d7cbea" data-src="img/b11.webp" data-alt="Слайд «Кто такие менторы?»" aria-label="Открыть: Слайд «Кто такие менторы?»"></button>
-        <button class="shot sq" data-c="#d7caef" data-src="img/b12.webp" data-alt="Слайд «Как они помогут тебе?»" aria-label="Открыть: Слайд «Как они помогут тебе?»"></button>
-        <button class="shot sq" data-c="#d8ccec" data-src="img/b13.webp" data-alt="Слайд «Что ты получишь от занятия?»" aria-label="Открыть: Слайд «Что ты получишь от занятия?»"></button>
+        <button type="button" class="shot sq" data-c="#d7cbea" data-src="img/b11.webp" data-alt="Слайд «Кто такие менторы?»" aria-label="Открыть: Слайд «Кто такие менторы?»"></button>
+        <button type="button" class="shot sq" data-c="#d7caef" data-src="img/b12.webp" data-alt="Слайд «Как они помогут тебе?»" aria-label="Открыть: Слайд «Как они помогут тебе?»"></button>
+        <button type="button" class="shot sq" data-c="#d8ccec" data-src="img/b13.webp" data-alt="Слайд «Что ты получишь от занятия?»" aria-label="Открыть: Слайд «Что ты получишь от занятия?»"></button>
       </div>
     </div>
 
-    <div class="case">
-      <div class="sub"><h3><span>Символ Башни: от эскиза до лендинга</span></h3><p>Нарисовала кубик от руки, перевела его в 3D и сделала главным образом первого экрана сайта</p></div>
+    <div class="case" data-priority="2">
+      <div class="sub"><h3><span>Лендинг Башни: визуальная концепция первого экрана</span></h3><p>Нарисовала символ от руки, перевела его в 3D и использовала как главный образ первого экрана сайта</p></div>
       <figure class="fig morph" id="morph">
         <div class="morph-stage">
-          <button class="shot m-a" data-c="#ffffff" data-src="img/b15.webp" data-alt="Эскиз кубика Башни с IT-иконками" aria-label="Открыть: Эскиз кубика Башни с IT-иконками"></button>
-          <button class="shot m-b" data-c="#ffffff" data-src="img/b16.webp" data-alt="3D‑кубик Башни в фирменных цветах" aria-label="Открыть: 3D‑кубик Башни в фирменных цветах"></button>
+          <button type="button" class="shot m-a" data-c="#ffffff" data-src="img/b15.webp" data-alt="Эскиз кубика Башни с IT-иконками" aria-label="Открыть: Эскиз кубика Башни с IT-иконками"></button>
+          <button type="button" class="shot m-b" data-c="#ffffff" data-src="img/b16.webp" data-alt="3D‑кубик Башни в фирменных цветах" aria-label="Открыть: 3D‑кубик Башни в фирменных цветах"></button>
         </div>
         <figcaption class="steps"><button type="button" class="step on" data-k="a"><b>1</b>Эскиз</button><span class="arr" aria-hidden="true">→</span><button type="button" class="step" data-k="b"><b>2</b>3D‑версия</button><span class="hint">наведите, чтобы увидеть превращение</span></figcaption>
       </figure>
-      <figure class="fig"><button class="shot" style="aspect-ratio:4096/2304" data-c="#cccac9" data-src="img/b14.webp" data-alt="Первый экран лендинга Башни с 3D‑кубиком" aria-label="Открыть: Первый экран лендинга Башни с 3D‑кубиком"></button><figcaption><b>3</b>Лендинг</figcaption></figure>
+      <figure class="fig"><button type="button" class="shot" style="aspect-ratio:4096/2304" data-c="#cccac9" data-src="img/b14.webp" data-alt="Первый экран лендинга Башни с 3D‑кубиком" aria-label="Открыть: Первый экран лендинга Башни с 3D‑кубиком"></button><figcaption><b>3</b>Лендинг</figcaption></figure>
+    </div>
+
+    <div class="case" data-priority="3">
+      <div class="sub"><h3><span>Бренд‑система «Башни»</span></h3><p>Зафиксировала правила логотипа, палитру, типографику и графические элементы в едином брендбуке</p></div>
+      <div class="grid g-cards">
+        <button type="button" class="shot ratio-wide" data-c="#f5f2f8" data-src="img/works/bashnya/brandbook-01.webp" data-alt="Обложка брендбука образовательного проекта «Башня»" aria-label="Открыть: Обложка брендбука «Башни»"></button>
+        <button type="button" class="shot ratio-wide" data-c="#e4e2e4" data-src="img/works/bashnya/brandbook-02.webp" data-alt="Правила использования логотипа «Башни» на светлом и тёмном фоне" aria-label="Открыть: Правила использования логотипа"></button>
+        <button type="button" class="shot ratio-wide" data-c="#bcaeec" data-src="img/works/bashnya/brandbook-03.webp" data-alt="Фирменная палитра «Башни» с кодами цветов" aria-label="Открыть: Фирменная палитра «Башни»"></button>
+        <button type="button" class="shot ratio-wide" data-c="#686568" data-src="img/works/bashnya/brandbook-04.webp" data-alt="Типографическая система «Башни»: Unbounded и Inter" aria-label="Открыть: Типографическая система «Башни»"></button>
+        <button type="button" class="shot ratio-wide" data-c="#bca8eb" data-src="img/works/bashnya/brandbook-05.webp" data-alt="Графические элементы бренд‑системы «Башни»" aria-label="Открыть: Графические элементы «Башни»"></button>
+      </div>
+    </div>
+
+    <div class="case" data-priority="8">
+      <div class="sub"><h3><span>Карьера и образовательный контент</span></h3><p>Собрала сложные темы в понятные схемы и последовательные серии для социальных сетей</p></div>
+      <div class="grid g-feature">
+        <figure class="fig"><button type="button" class="shot ratio-poster" data-c="#7290ed" data-src="img/works/bashnya/product-manager-path.webp" data-alt="Инфографика «Путь продуктового менеджера»: исследование, тестирование и запуск" aria-label="Открыть: Путь продуктового менеджера"></button><figcaption>Инфографика «Путь продуктового менеджера»</figcaption></figure>
+        <div class="grid g-resume">
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-01.webp" data-alt="Обложка карусели «Пора составлять резюме» с котами" aria-label="Открыть: Обложка карусели о резюме"></button>
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-02.webp" data-alt="Слайд карусели с советом по составлению резюме" aria-label="Открыть: Совет по составлению резюме"></button>
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-03.webp" data-alt="Пример описания личных достижений в резюме" aria-label="Открыть: Пример достижений в резюме"></button>
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-04.webp" data-alt="Чек‑лист резюме продуктового специалиста" aria-label="Открыть: Чек‑лист резюме"></button>
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-05.webp" data-alt="Отзыв участника о резюме и поиске ментора" aria-label="Открыть: Отзыв участника"></button>
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-06.webp" data-alt="Чек‑лист подготовки к собеседованию" aria-label="Открыть: Подготовка к собеседованию"></button>
+          <button type="button" class="shot sq" data-c="#b99ae8" data-src="img/works/bashnya/resume-07.webp" data-alt="Советы по прохождению собеседования" aria-label="Открыть: Советы по собеседованию"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="case" data-priority="5">
+      <div class="sub"><h3><span>Серийные обложки для соцсетей</span></h3><p>Разработала масштабируемую систему: единая композиция, рубрикатор и разные визуальные метафоры</p></div>
+      <div class="grid g-social">
+        <button type="button" class="shot sq" data-c="#baa4e9" data-src="img/works/bashnya/social-may.webp" data-alt="Праздничная иллюстрация «С 1 мая» для «Башни»" aria-label="Открыть: Иллюстрация «С 1 мая»"></button>
+        <button type="button" class="shot sq" data-c="#e8d9f2" data-src="img/works/bashnya/social-hard-skills.webp" data-alt="Обложка материала о парализации работы компании одним файлом" aria-label="Открыть: Обложка рубрики Hard Skills"></button>
+        <button type="button" class="shot sq" data-c="#7189dc" data-src="img/works/bashnya/social-content-plan.webp" data-alt="Обложка об изменениях в планировании постов" aria-label="Открыть: Обложка об изменениях контент‑плана"></button>
+        <button type="button" class="shot sq" data-c="#dac9ef" data-src="img/works/bashnya/social-subscription.webp" data-alt="Обложка о проблеме подписывания на сервисы" aria-label="Открыть: Обложка рубрики Hard Skills"></button>
+        <button type="button" class="shot sq" data-c="#8093d4" data-src="img/works/bashnya/social-vacancy.webp" data-alt="Обложка вакансии руководителя в «Башне»" aria-label="Открыть: Обложка вакансии"></button>
+      </div>
+    </div>
+
+    <div class="case" data-priority="10">
+      <div class="sub"><h3><span>Стикерпак «Башни»</span></h3><p>Нарисовала серию реакций фирменного персонажа для общения со студентами, анонсов и внутренних коммуникаций</p></div>
+      <div class="grid g-assets" aria-label="Стикерпак Башни">
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-01.webp" data-alt="Стикер Башни: кот работает за ноутбуком" aria-label="Разглядеть стикер: кот работает за ноутбуком"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-02.webp" data-alt="Стикер Башни: кот в пиксельных очках" aria-label="Разглядеть стикер: кот в пиксельных очках"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-03.webp" data-alt="Стикер Башни: кот с взрывом эмоций" aria-label="Разглядеть стикер: кот с взрывом эмоций"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-04.webp" data-alt="Стикер Башни: кот на фоне взрыва" aria-label="Разглядеть стикер: кот на фоне взрыва"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-05.webp" data-alt="Стикер Башни: кот закрывает лицо лапами" aria-label="Разглядеть стикер: кот закрывает лицо лапами"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-06.webp" data-alt="Стикер Башни: возмущённый кот" aria-label="Разглядеть стикер: возмущённый кот"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-07.webp" data-alt="Стикер Башни: кот с градусником" aria-label="Разглядеть стикер: кот с градусником"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-08.webp" data-alt="Стикер Башни: кот-клоун" aria-label="Разглядеть стикер: кот-клоун"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-09.webp" data-alt="Стикер Башни: кот и биржевой график" aria-label="Разглядеть стикер: кот и биржевой график"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-10.webp" data-alt="Стикер Башни: растерянный кот" aria-label="Разглядеть стикер: растерянный кот"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-11.webp" data-alt="Стикер Башни: грустный кот" aria-label="Разглядеть стикер: грустный кот"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-12.webp" data-alt="Стикер Башни: кот в ночном лесу" aria-label="Разглядеть стикер: кот в ночном лесу"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-13.webp" data-alt="Стикер Башни: кот напоминает сдать работу" aria-label="Разглядеть стикер: кот напоминает сдать работу"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-14.webp" data-alt="Стикер Башни: смеющийся кот" aria-label="Разглядеть стикер: смеющийся кот"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-15.webp" data-alt="Стикер Башни: влюблённый кот" aria-label="Разглядеть стикер: влюблённый кот"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-16.webp" data-alt="Стикер Башни: пламя" aria-label="Разглядеть стикер: пламя"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-17.webp" data-alt="Стикер Башни: надпись «Джаз»" aria-label="Разглядеть стикер: надпись «Джаз»"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-18.webp" data-alt="Стикер Башни: растущий график" aria-label="Разглядеть стикер: растущий график"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-19.webp" data-alt="Стикер Башни: спокойный кот" aria-label="Разглядеть стикер: спокойный кот"></button>
+        <button type="button" class="shot sq asset-tile sticker-tile" data-c="#f8f8fb" data-src="img/works/bashnya/stickers/sticker-20.webp" data-alt="Стикер Башни: довольный кот" aria-label="Разглядеть стикер: довольный кот"></button>
+      </div>
+    </div>
+
+    <div class="case" data-priority="4">
+      <div class="sub"><h3><span>Иллюстрации для UI‑кита</span></h3><p>Самостоятельно нарисовала серию иллюстраций для интерфейсных сценариев и подготовила гайд, по которому команда может генерировать в AI новые изображения в том же стиле</p></div>
+      <div class="grid g-assets" aria-label="Иллюстрации для UI-кита Башни">
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-01.webp" data-alt="Иллюстрация для UI-кита: выбор среди людей" aria-label="Разглядеть иллюстрацию: выбор среди людей"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-02.webp" data-alt="Иллюстрация для UI-кита: компас" aria-label="Разглядеть иллюстрацию: компас"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-03.webp" data-alt="Иллюстрация для UI-кита: вершина с флагом" aria-label="Разглядеть иллюстрацию: вершина с флагом"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-04.webp" data-alt="Иллюстрация для UI-кита: песочные часы" aria-label="Разглядеть иллюстрацию: песочные часы"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-05.webp" data-alt="Иллюстрация для UI-кита: циферблат" aria-label="Разглядеть иллюстрацию: циферблат"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-06.webp" data-alt="Иллюстрация для UI-кита: цифровые часы" aria-label="Разглядеть иллюстрацию: цифровые часы"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-07.webp" data-alt="Иллюстрация для UI-кита: клавиша Control" aria-label="Разглядеть иллюстрацию: клавиша Control"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-08.webp" data-alt="Иллюстрация для UI-кита: клавиша Shift" aria-label="Разглядеть иллюстрацию: клавиша Shift"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-09.webp" data-alt="Иллюстрация для UI-кита: шестерёнка" aria-label="Разглядеть иллюстрацию: шестерёнка"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-10.webp" data-alt="Иллюстрация для UI-кита: объёмная шестерёнка" aria-label="Разглядеть иллюстрацию: объёмная шестерёнка"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-11.webp" data-alt="Иллюстрация для UI-кита: руки передают карточку" aria-label="Разглядеть иллюстрацию: руки передают карточку"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-12.webp" data-alt="Иллюстрация для UI-кита: рукопожатие" aria-label="Разглядеть иллюстрацию: рукопожатие"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-13.webp" data-alt="Иллюстрация для UI-кита: светлый вопросительный знак" aria-label="Разглядеть иллюстрацию: светлый вопросительный знак"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-14.webp" data-alt="Иллюстрация для UI-кита: синий вопросительный знак" aria-label="Разглядеть иллюстрацию: синий вопросительный знак"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-15.webp" data-alt="Иллюстрация для UI-кита: жёлтый вопросительный знак" aria-label="Разглядеть иллюстрацию: жёлтый вопросительный знак"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-16.webp" data-alt="Иллюстрация для UI-кита: персонаж смотрит в сторону" aria-label="Разглядеть иллюстрацию: персонаж смотрит в сторону"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-17.webp" data-alt="Иллюстрация для UI-кита: заметки о резюме" aria-label="Разглядеть иллюстрацию: заметки о резюме"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-18.webp" data-alt="Иллюстрация для UI-кита: календарь" aria-label="Разглядеть иллюстрацию: календарь"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-19.webp" data-alt="Иллюстрация для UI-кита: школьная доска" aria-label="Разглядеть иллюстрацию: школьная доска"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-20.webp" data-alt="Иллюстрация для UI-кита: курсор" aria-label="Разглядеть иллюстрацию: курсор"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-21.webp" data-alt="Иллюстрация для UI-кита: поиск на ноутбуке" aria-label="Разглядеть иллюстрацию: поиск на ноутбуке"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-22.webp" data-alt="Иллюстрация для UI-кита: аналитика на ноутбуке" aria-label="Разглядеть иллюстрацию: аналитика на ноутбуке"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-23.webp" data-alt="Иллюстрация для UI-кита: рабочий экран ноутбука" aria-label="Разглядеть иллюстрацию: рабочий экран ноутбука"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-24.webp" data-alt="Иллюстрация для UI-кита: оранжевая вспышка" aria-label="Разглядеть иллюстрацию: оранжевая вспышка"></button>
+        <button type="button" class="shot sq asset-tile" data-c="#f8f8fb" data-src="img/works/bashnya/illustrations/illustration-25.webp" data-alt="Иллюстрация для UI-кита: красный восклицательный знак" aria-label="Разглядеть иллюстрацию: красный восклицательный знак"></button>
+      </div>
+    </div>
+
+    <div class="case" data-priority="9">
+      <div class="sub"><h3><span>Кампания курса Python</span></h3><p>Адаптировала key visual курса под два печатных формата</p></div>
+      <div class="grid g-campaign">
+        <button type="button" class="shot ratio-a4" data-c="#f4f0f1" data-src="img/works/bashnya/python-course-01.webp" data-alt="Вертикальный макет рекламы курса Python для анализа данных" aria-label="Открыть: Рекламный макет курса Python, вариант 1"></button>
+        <button type="button" class="shot ratio-a4" data-c="#f4f0f1" data-src="img/works/bashnya/python-course-02.webp" data-alt="Альтернативный макет рекламы курса Python для анализа данных" aria-label="Открыть: Рекламный макет курса Python, вариант 2"></button>
+      </div>
     </div>
   </section>
 
   <section id="s-doggo" class="r2" aria-labelledby="doggo">
     <div class="sec-head">
-      <h2 id="doggo">Doggo &amp; PuppyClub<span class="role">Коммуникационный дизайнер / иллюстратор</span><span class="when">сентябрь 2023 — апрель 2024</span></h2>
-      <p class="lead">Сеть груминг-салонов в Москве и Санкт-Петербурге. Придумала фирменных персонажей и перенесла их в соцсети, стикерпаки, рекламу, упаковку и полиграфию.</p>
+      <h2 id="doggo">Doggo &amp; PuppyClub: сайты и рекламная система<span class="role">Коммуникационный дизайнер / иллюстратор</span><span class="when">сентябрь 2023 — апрель 2024</span></h2>
+      <p class="lead">Для сети груминг‑салонов разработала фирменных персонажей и масштабировала визуальный язык на сайты, рекламные креативы, контент, наружные носители, упаковку и полиграфию.</p>
+      <div class="project-links">
+        <a href="https://doggo.ru/" target="_blank" rel="noopener noreferrer">Doggo.ru <span aria-hidden="true">↗</span></a>
+        <a href="https://puppyclub.ru/" target="_blank" rel="noopener noreferrer">PuppyClub.ru <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
 
-    <div class="case">
+    <div class="case" data-priority="6">
       <div class="sub"><h3><span>Иллюстрации и мерч</span></h3><p>Персонажи, которые перешли с иллюстраций на футболки команды</p></div>
       <div class="grid g-d1">
-        <figure class="fig"><button class="shot" style="aspect-ratio:2123/2848" data-c="#cfccf0" data-src="img/d01.webp" data-alt="Четыре иллюстрации собак в голубом и розовом: мытьё, стрижка, сушка" aria-label="Открыть: Четыре иллюстрации собак в голубом и розовом: мытьё, стрижка, сушка"></button><figcaption><b>1</b>Иллюстрации</figcaption></figure>
-        <figure class="fig"><button class="shot" style="aspect-ratio:590/893" data-c="#858589" data-src="img/d02.webp" data-alt="Пост doggo.spb: сотрудница в футболке с иллюстрациями" aria-label="Открыть: Пост doggo.spb: сотрудница в футболке с иллюстрациями"></button><figcaption><b>2</b>Мерч для команды</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot" style="aspect-ratio:2123/2848" data-c="#cfccf0" data-src="img/d01.webp" data-alt="Четыре иллюстрации собак в голубом и розовом: мытьё, стрижка, сушка" aria-label="Открыть: Четыре иллюстрации собак в голубом и розовом: мытьё, стрижка, сушка"></button><figcaption><b>1</b>Иллюстрации</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot" style="aspect-ratio:590/893" data-c="#858589" data-src="img/d02.webp" data-alt="Пост doggo.spb: сотрудница в футболке с иллюстрациями" aria-label="Открыть: Пост doggo.spb: сотрудница в футболке с иллюстрациями"></button><figcaption><b>2</b>Мерч для команды</figcaption></figure>
       </div>
     </div>
 
-    <div class="case">
+    <div class="case" data-priority="7">
       <div class="sub"><h3><span>Стикерпаки</span></h3><p>От макета до тиража: наборы наклеек для Doggo и PuppyClub</p></div>
       <div class="grid g-d2">
-        <figure class="fig"><button class="shot" style="aspect-ratio:666/831" data-c="#eccbcd" data-src="img/d03.webp" data-alt="Стикерпак PuppyClub с собаками на розовом фоне" aria-label="Открыть: Стикерпак PuppyClub с собаками на розовом фоне"></button><figcaption><b>1</b>Макет PuppyClub</figcaption></figure>
-        <figure class="fig"><button class="shot" style="aspect-ratio:2274/3204" data-c="#b1bbac" data-src="img/d04.webp" data-alt="Стикерпак Doggo с собаками на голубом фоне" aria-label="Открыть: Стикерпак Doggo с собаками на голубом фоне"></button><figcaption><b>1</b>Макет Doggo</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot" style="aspect-ratio:666/831" data-c="#eccbcd" data-src="img/d03.webp" data-alt="Стикерпак PuppyClub с собаками на розовом фоне" aria-label="Открыть: Стикерпак PuppyClub с собаками на розовом фоне"></button><figcaption><b>1</b>Макет PuppyClub</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot" style="aspect-ratio:2274/3204" data-c="#b1bbac" data-src="img/d04.webp" data-alt="Стикерпак Doggo с собаками на голубом фоне" aria-label="Открыть: Стикерпак Doggo с собаками на голубом фоне"></button><figcaption><b>1</b>Макет Doggo</figcaption></figure>
       </div>
       <div class="grid g-pair">
-        <figure class="fig"><button class="shot" style="aspect-ratio:628/814" data-c="#e3ab9f" data-src="img/d05.webp" data-alt="Напечатанный стикерпак PuppyClub в руке" aria-label="Открыть: Напечатанный стикерпак PuppyClub в руке"></button><figcaption><b>2</b>Тираж PuppyClub</figcaption></figure>
-        <figure class="fig"><button class="shot" style="aspect-ratio:628/814" data-c="#8c7460" data-src="img/d06.webp" data-alt="Напечатанный стикерпак Doggo в руке" aria-label="Открыть: Напечатанный стикерпак Doggo в руке"></button><figcaption><b>2</b>Тираж Doggo</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot" style="aspect-ratio:628/814" data-c="#e3ab9f" data-src="img/d05.webp" data-alt="Напечатанный стикерпак PuppyClub в руке" aria-label="Открыть: Напечатанный стикерпак PuppyClub в руке"></button><figcaption><b>2</b>Тираж PuppyClub</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot" style="aspect-ratio:3767/4348" data-c="#8c7460" data-src="img/d06.webp" data-alt="Напечатанный стикерпак Doggo в руке" aria-label="Открыть: Напечатанный стикерпак Doggo в руке"></button><figcaption><b>2</b>Тираж Doggo</figcaption></figure>
       </div>
     </div>
 
-    <div class="case">
+    <div class="case" data-priority="2">
       <div class="sub"><h3><span>Реклама</span></h3><p>Баннеры к открытию салона и промокоду: фото и персонажи в одной системе</p></div>
-      <button class="shot" style="aspect-ratio:1280/617" data-c="#cd91bb" data-src="img/d07.webp" data-alt="Баннер «Мы открылись!»: зоогостиница и детский сад" aria-label="Открыть: Баннер «Мы открылись!»: зоогостиница и детский сад"></button>
-      <button class="shot" style="aspect-ratio:4096/1885" data-c="#d3d9f7" data-src="img/d08.webp" data-alt="Баннер с промокодом «Знакомство» и скидкой 1000 ₽" aria-label="Открыть: Баннер с промокодом «Знакомство» и скидкой 1000 ₽"></button>
+      <button type="button" class="shot" style="aspect-ratio:1280/617" data-c="#cd91bb" data-src="img/d07.webp" data-alt="Баннер «Мы открылись!»: зоогостиница и детский сад" aria-label="Открыть: Баннер «Мы открылись!»: зоогостиница и детский сад"></button>
+      <button type="button" class="shot" style="aspect-ratio:4096/1885" data-c="#d3d9f7" data-src="img/d08.webp" data-alt="Баннер с промокодом «Знакомство» и скидкой 1000 ₽" aria-label="Открыть: Баннер с промокодом «Знакомство» и скидкой 1000 ₽"></button>
     </div>
 
-    <div class="case">
+    <div class="case" data-priority="5">
       <div class="sub"><h3><span>Упаковка</span></h3><p>От развёртки до готовой коробки биопакетов с персонажем</p></div>
-      <button class="shot" style="aspect-ratio:3266/3440" data-c="#8ccceb" data-src="img/d09.webp" data-alt="Упаковка биопакетов Doggo: развёртка и готовая коробка" aria-label="Открыть: Упаковка биопакетов Doggo: развёртка и готовая коробка"></button>
+      <button type="button" class="shot" style="aspect-ratio:5132/3836" data-c="#8ccceb" data-src="img/works/doggo/package.webp" data-alt="Упаковка биопакетов Doggo: актуальная развёртка и готовая коробка" aria-label="Разглядеть: упаковка биопакетов Doggo"></button>
+    </div>
+
+    <div class="case" data-priority="3">
+      <div class="sub"><h3><span>Гайд по услугам Doggo</span></h3><p>Собрала большой перечень процедур в последовательную мобильную презентацию с фирменными персонажами</p></div>
+      <div class="grid g-portrait">
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-01.webp" data-alt="Слайд Doggo о составе классических комплексов" aria-label="Открыть: Классические комплексы Doggo"></button>
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-02.webp" data-alt="Слайд Doggo о дополнительных услугах" aria-label="Открыть: Дополнительные услуги Doggo"></button>
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-03.webp" data-alt="Слайд Doggo о VIP‑комплексах Relok и SPA" aria-label="Открыть: VIP‑комплексы Doggo"></button>
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-04.webp" data-alt="Слайд Doggo о SPA‑комплексах Silk и Glitter" aria-label="Открыть: SPA‑комплексы Doggo"></button>
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-05.webp" data-alt="Слайд Doggo об услугах для кошек и креативном груминге" aria-label="Открыть: Услуги для кошек и креативный груминг"></button>
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-06.webp" data-alt="Обзор услуг и комплексов Doggo" aria-label="Открыть: Обзор услуг Doggo"></button>
+        <button type="button" class="shot ratio-phone" data-c="#15a7e2" data-src="img/works/doggo/services-07.webp" data-alt="Финальный слайд Doggo с призывом записаться онлайн" aria-label="Открыть: Запись в Doggo"></button>
+      </div>
+    </div>
+
+    <div class="case" data-priority="1">
+      <div class="sub"><h3><span>Сайты Doggo и PuppyClub</span></h3><p>Разработала визуальную подачу первых экранов для двух направлений бренда: груминг‑салонов и йоги со щенками</p></div>
+      <div class="grid g-sites">
+        <figure class="fig"><button type="button" class="shot ratio-browser" data-c="#f1c2ed" data-src="img/works/doggo/puppyclub-site.webp" data-alt="Первый экран сайта PuppyClub с анонсом йоги со щенками" aria-label="Открыть: Сайт PuppyClub"></button><figcaption>PuppyClub — йога со щенками</figcaption></figure>
+        <figure class="fig"><button type="button" class="shot ratio-browser" data-c="#72b8ed" data-src="img/works/doggo/doggo-site.webp" data-alt="Первый экран сайта Doggo с фирменными иллюстрациями" aria-label="Открыть: Сайт Doggo"></button><figcaption>Doggo — груминг и SPA‑салоны</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="case" data-priority="8">
+      <div class="sub"><h3><span>Иллюстрации в пространстве</span></h3><p>Перенесла характер бренда из digital‑форматов на витрины и оформление физических точек</p></div>
+      <div class="grid g-space">
+        <button type="button" class="shot sq" data-c="#10a8e5" data-src="img/works/doggo/hello-doggo.webp" data-alt="Фирменная иллюстрация собаки с репликой Hello, Doggo" aria-label="Открыть: Иллюстрация Hello, Doggo"></button>
+        <button type="button" class="shot ratio-store" data-c="#5f554d" data-src="img/works/doggo/window-art-01.webp" data-alt="Фирменная иллюстрация Doggo на витрине салона" aria-label="Открыть: Оформление витрины Doggo, работа 1"></button>
+        <button type="button" class="shot ratio-store" data-c="#544c4c" data-src="img/works/doggo/window-art-02.webp" data-alt="Персонаж Doggo на подсвеченной витрине салона" aria-label="Открыть: Оформление витрины Doggo, работа 2"></button>
+      </div>
+    </div>
+
+    <div class="case" data-priority="4">
+      <div class="sub"><h3><span>Наружная реклама Doggo</span></h3><p>Адаптировала рекламные креативы под оформление городского окна и крупный дорожный билборд</p></div>
+      <div class="grid g-video-pair">
+        <figure class="fig video-fig">
+          <video class="project-video" autoplay muted loop playsinline preload="metadata" poster="img/works/doggo/city-screen-poster.webp" aria-label="Рекламное оформление окна Doggo">
+            <source src="assets/video/doggo-city-screen.mp4" type="video/mp4">
+          </video>
+          <figcaption>Рекламное оформление городского окна</figcaption>
+        </figure>
+        <figure class="fig video-fig">
+          <video class="project-video" autoplay muted loop playsinline preload="metadata" poster="img/works/doggo/outdoor-billboard-poster.webp" aria-label="Билборд Doggo с рекламой детского сада для собак">
+            <source src="assets/video/doggo-outdoor-billboard.mp4" type="video/mp4">
+          </video>
+          <figcaption>Рекламный макет на дорожном билборде</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
-  <section id="s-personal" class="r2" aria-labelledby="personal">
-    <div class="sec-head"><h2 id="personal">Личные проекты</h2></div>
-    <div class="grid g-p">
-      <figure class="fig"><button class="shot" style="aspect-ratio:536/758" data-c="#efd48a" data-src="img/p01.webp" data-alt="Стикерпак с вязаными сумками, вишнями и бантами" aria-label="Открыть: Стикерпак с вязаными сумками, вишнями и бантами"></button><figcaption>Стикерпак с сумками</figcaption></figure>
-      <figure class="fig"><button class="shot" style="aspect-ratio:720/758" data-c="#ceb6b4" data-src="img/p02.webp" data-alt="Иллюстрированный настольный календарь" aria-label="Открыть: Иллюстрированный настольный календарь"></button><figcaption>Иллюстрированный календарь</figcaption></figure>
-    </div>
-  </section>
+  </main>
 
   <footer class="foot" id="contacts">
     <div class="foot-cta">
       <h2>Давайте работать вместе</h2>
-      <p class="foot-sub">Коммуникационный дизайн и иллюстрация · full‑time или проекты · удалённо</p>
+      <p class="foot-sub">Marketing design, web design и визуальные системы · full‑time или проекты · удалённо</p>
       <div class="btns">
         <a class="btn primary" href="https://t.me/tallety" target="_blank" rel="noopener">Написать в Telegram <span aria-hidden="true">↗</span></a>
-        <a class="btn copy-mail" href="mailto:heytallety@gmail.com" data-hint="Скопировать">heytallety@gmail.com</a>
-        <a class="btn cv-link" href="Tasia_Chernyakhovskaya_CV.pdf" target="_blank" rel="noopener">CV, PDF <span aria-hidden="true">↗</span></a>
+        <a class="btn copy-mail" href="mailto:heytallety@gmail.com">heytallety@gmail.com</a>
+        <a class="btn cv-link" href="cv.html">Открыть CV <span aria-hidden="true">→</span></a>
       </div>
-      <p class="foot-meta">Екатеринбург, GMT+5 — на 2 часа впереди Москвы<span class="clock-wrap" hidden> · у Таси сейчас <span class="clock"></span></span></p>
+      <p class="foot-meta">Екатеринбург, GMT+5 — на 2 часа впереди Москвы<span class="clock-wrap" hidden> · у Таисии сейчас <span class="clock"></span></span></p>
     </div>
     <div class="foot-bottom">
-      <p class="copy">© 2026 Тася Черняховская</p>
+      <p class="copy">© 2026 Таисия Черняховская</p>
+      <p class="tech">Сайт завайбкодила вместе с Codex на HTML, CSS и JavaScript</p>
       <button class="totop" id="toTop" type="button">Наверх <span aria-hidden="true">↑</span></button>
     </div>
   </footer>
 </div>
 
-<div class="cur" id="cur" aria-hidden="true"><span>Открыть</span></div>
+<div class="cur" id="cur" aria-hidden="true"></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр изображения" aria-hidden="true">
   <div class="lb-stage" id="lbStage"><img id="lbImg" alt=""></div>
-  <button class="lb-zoom" id="lbZoom" aria-label="Увеличить"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg></button>
-  <button class="lb-close" id="lbClose" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-  <button class="lb-prev" id="lbPrev" aria-label="Предыдущее"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-  <button class="lb-next" id="lbNext" aria-label="Следующее"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <button type="button" class="lb-zoom" id="lbZoom" aria-label="Увеличить"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg></button>
+  <button type="button" class="lb-close" id="lbClose" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button type="button" class="lb-prev" id="lbPrev" aria-label="Предыдущее"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button type="button" class="lb-next" id="lbNext" aria-label="Следующее"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
   <div class="lb-count" id="lbCount"></div>
 </div>
 
-<script>
-var SIZES={"b01":[600,1200],"b02":[600],"b03":[600],"b04":[600],"b05":[600],"b06":[600,1200],"b07":[600],"b08":[600],"b09":[600,1200],"b10":[600,1200],"b11":[600],"b12":[600],"b13":[600,1200],"b14":[600,1200],"b15":[600,1200],"b16":[600,1200],"d01":[600,1200],"d02":[600],"d03":[600,1200],"d04":[600,1200],"d05":[600,1200],"d06":[600,1200],"d07":[600,1200],"d08":[600,1200],"d09":[600,1200],"p01":[600,1200],"p02":[600,1200]}, FULL={"b01":1720,"b02":857,"b03":857,"b04":857,"b05":857,"b06":1720,"b07":850,"b08":850,"b09":1720,"b10":2400,"b11":852,"b12":852,"b13":1714,"b14":2400,"b15":1522,"b16":1518,"d01":1789,"d02":1170,"d03":1919,"d04":1703,"d05":1412,"d06":1412,"d07":2400,"d08":2400,"d09":2279,"p01":1697,"p02":2279};
-(function(){
-  var shots=[].slice.call(document.querySelectorAll('.shot'));
-  shots.forEach(function(b,i){
-    var img=document.createElement('img'), k=b.dataset.src.replace(/^img\/|\.webp$/g,''), set=[];
-    (SIZES[k]||[]).forEach(function(w){set.push('img/s/'+k+'-'+w+'.webp '+w+'w');});
-    if(set.length){set.push(b.dataset.src+' '+FULL[k]+'w'); img.srcset=set.join(', '); img.sizes=Math.ceil(b.getBoundingClientRect().width||600)+'px';}
-    if(b.dataset.c) b.style.backgroundColor=b.dataset.c;
-    img.addEventListener('load',function(){img.classList.add('ld')}); img.addEventListener('error',function(){img.classList.add('ld')});
-    img.src=b.dataset.src; img.alt=b.dataset.alt||''; img.loading=i<3?'eager':'lazy'; img.decoding='async';
-    b.appendChild(img); if(img.complete&&img.naturalWidth) img.classList.add('ld');
-    b.addEventListener('click',function(){open(i)});
-  });
-  var lb=document.getElementById('lb'), stage=document.getElementById('lbStage'), im=document.getElementById('lbImg'),
-      cnt=document.getElementById('lbCount'), zBtn=document.getElementById('lbZoom'), cur=0, last=null;
-  function show(i){
-    cur=(i+shots.length)%shots.length; setZoom(false);
-    im.src=shots[cur].dataset.src; im.alt=shots[cur].dataset.alt||''; cnt.textContent=(cur+1)+' / '+shots.length;
-    [cur+1,cur-1].forEach(function(k){var p=new Image();p.src=shots[(k+shots.length)%shots.length].dataset.src;});
-  }
-  var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function flipFrom(el,dir){ // dir 'in': thumb -> full; 'out': full -> thumb
-    var t=el.getBoundingClientRect(), f=im.getBoundingClientRect();
-    if(!t.width||!f.width) return false;
-    var sc=t.width/f.width, dx=(t.left+t.width/2)-(f.left+f.width/2), dy=(t.top+t.height/2)-(f.top+f.height/2);
-    var from='translate('+dx+'px,'+dy+'px) scale('+sc+')';
-    im.classList.remove('flip');
-    if(dir==='in'){ im.style.transform=from; im.style.borderRadius=(24/sc)+'px'; im.getBoundingClientRect(); im.classList.add('flip'); im.style.transform=''; im.style.borderRadius=''; }
-    else { im.classList.add('flip'); im.style.transform=from; im.style.borderRadius=(24/sc)+'px'; }
-    return true;
-  }
-  function open(i,from){
-    last=document.activeElement; var b=shots[i], th=(from||b).querySelector('img');
-    show(i);
-    if(th&&th.currentSrc&&!RM){ // start from the already-loaded thumbnail, swap to full size when ready
-      var full=im.src; im.src=th.currentSrc; var pre=new Image(); pre.onload=function(){ if(shots[cur]===b) im.src=full; }; pre.src=full;
-    }
-    lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
-    if(!RM) requestAnimationFrame(function(){ flipFrom(from||b,'in'); });
-    document.getElementById('lbClose').focus();
-  }
-  function close(){
-    var b=shots[cur], zoomed=lb.classList.contains('zoomed');
-    var r=b.getBoundingClientRect(), vis=r.bottom>0&&r.top<innerHeight;
-    function done(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; setZoom(false);
-      setTimeout(function(){ im.classList.remove('flip'); im.style.transform=''; im.style.borderRadius=''; },220); if(last)last.focus({preventScroll:true}); }
-    if(!RM&&!zoomed&&vis&&flipFrom(b,'out')){ lb.classList.add('closing'); setTimeout(function(){ lb.classList.remove('closing'); done(); },300); }
-    else done();
-  }
-  function setZoom(on,e){
-    var was=lb.classList.contains('zoomed'); lb.classList.toggle('zoomed',on);
-    zBtn.setAttribute('aria-label',on?'Уменьшить':'Увеличить');
-    if(on&&!was&&e){ // keep clicked point under cursor
-      var r=im.getBoundingClientRect(); var fx=(e.clientX-r.left)/r.width, fy=(e.clientY-r.top)/r.height;
-      requestAnimationFrame(function(){stage.scrollLeft=im.offsetWidth*fx-stage.clientWidth/2; stage.scrollTop=im.offsetHeight*fy-stage.clientHeight/2;});
-    } else if(on&&!was){requestAnimationFrame(function(){stage.scrollLeft=(im.offsetWidth-stage.clientWidth)/2; stage.scrollTop=(im.offsetHeight-stage.clientHeight)/2;});}
-  }
-  im.addEventListener('click',function(e){e.stopPropagation(); setZoom(!lb.classList.contains('zoomed'),e);});
-  zBtn.onclick=function(){setZoom(!lb.classList.contains('zoomed'));};
-  stage.addEventListener('click',function(e){if(e.target===stage&&!lb.classList.contains('zoomed'))close();});
-  document.getElementById('lbClose').onclick=close;
-  document.getElementById('lbPrev').onclick=function(){show(cur-1)};
-  window.tasyaOpen=function(src,from){ for(var k=0;k<shots.length;k++){ if(shots[k].dataset.src===src){ open(k,from); return; } } };
-  document.getElementById('lbNext').onclick=function(){show(cur+1)};
-  document.addEventListener('keydown',function(e){
-    if(!lb.classList.contains('open'))return;
-    if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(cur-1); else if(e.key==='ArrowRight')show(cur+1);
-  });
-  var sx=null,sy=null;
-  stage.addEventListener('touchstart',function(e){if(e.touches.length===1&&!lb.classList.contains('zoomed')){sx=e.touches[0].clientX;sy=e.touches[0].clientY;}else sx=null;},{passive:true});
-  stage.addEventListener('touchend',function(e){
-    if(sx===null||(window.visualViewport&&visualViewport.scale>1.01))return;
-    var dx=e.changedTouches[0].clientX-sx, dy=e.changedTouches[0].clientY-sy;
-    if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)show(dx<0?cur+1:cur-1);
-    else if(dy>90&&Math.abs(dy)>Math.abs(dx)*1.5)close();
-    sx=null;
-  },{passive:true});
-})();
-
-(function(){
-  var t=document.getElementById('toast'), timer;
-  function toast(msg){t.textContent=msg; t.classList.add('show'); clearTimeout(timer); timer=setTimeout(function(){t.classList.remove('show')},1800);}
-  function fallback(text){
-    var ta=document.createElement('textarea'); ta.value=text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
-    document.body.appendChild(ta); ta.select(); var ok=false; try{ok=document.execCommand('copy')}catch(e){} document.body.removeChild(ta); return ok;
-  }
-  document.querySelectorAll('.copy-mail').forEach(function(a){
-    a.addEventListener('click',function(e){
-      e.preventDefault(); var mail=a.textContent.trim(), href=a.href;
-      var done=function(){toast('Почта скопирована')}, fail=function(){ if(fallback(mail)) done(); else location.href=href; };
-      if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(mail).then(done,fail);} else fail();
-    });
-  });
-})();
-
-/* Figma-style squircle (corner smoothing 60%) for all 24px corners */
-(function(){
-  var SMOOTH=0.6, rad=function(d){return d*Math.PI/180};
-  function corner(R,budget){
-    var sm=SMOOTH, p=(1+sm)*R;
-    sm=Math.min(sm, budget/R-1); p=Math.min(p,budget);
-    var arc=90*(1-sm), L=Math.sin(rad(arc/2))*R*Math.SQRT2, alpha=(90-arc)/2,
-        p34=R*Math.tan(rad(alpha/2)), beta=45*sm, c=p34*Math.cos(rad(beta)), d=c*Math.tan(rad(beta)),
-        b=(p-L-c-d)/3, a=2*b;
-    return {a:a,b:b,c:c,d:d,p:p,L:L,R:R};
-  }
-  function f(n){return Math.round(n*100)/100}
-  function path(w,h,R){
-    R=Math.min(R,w/2,h/2); var k=corner(R,Math.min(w,h)/2), a=k.a,b=k.b,c=k.c,d=k.d,p=k.p,L=k.L;
-    var A='a '+f(R)+' '+f(R)+' 0 0 1 ';
-    return ['M',f(w-p),0,
-      'c',f(a),0,f(a+b),0,f(a+b+c),f(d), A+f(L)+' '+f(L), 'c',f(d),f(c),f(d),f(b+c),f(d),f(a+b+c),
-      'L',f(w),f(h-p),
-      'c',0,f(a),0,f(a+b),f(-d),f(a+b+c), A+f(-L)+' '+f(L), 'c',f(-c),f(d),f(-(b+c)),f(d),f(-(a+b+c)),f(d),
-      'L',f(p),f(h),
-      'c',f(-a),0,f(-(a+b)),0,f(-(a+b+c)),f(-d), A+f(-L)+' '+f(-L), 'c',f(-d),f(-c),f(-d),f(-(b+c)),f(-d),f(-(a+b+c)),
-      'L',0,f(p),
-      'c',0,f(-a),0,f(-(a+b)),f(d),f(-(a+b+c)), A+f(L)+' '+f(-L), 'c',f(c),f(-d),f(b+c),f(-d),f(a+b+c),f(-d),
-      'Z'].join(' ');
-  }
-  var els=[].slice.call(document.querySelectorAll('.shot, .avatar, .hcard'));
-  if(!els.length||!window.CSS||!CSS.supports('clip-path','path("M0 0Z")'))return;
-  function apply(el){
-    var r=el.getBoundingClientRect(), R=parseFloat(getComputedStyle(el).borderTopLeftRadius)||24;
-    if(r.width&&r.height) el.style.clipPath='path("'+path(r.width,r.height,R)+'")';
-  }
-  if('ResizeObserver' in window){ var ro=new ResizeObserver(function(es){es.forEach(function(e){apply(e.target)})}); els.forEach(function(el){ro.observe(el)}); }
-  else { els.forEach(apply); addEventListener('resize',function(){els.forEach(apply)}); }
-})();
-
-(function(){
-  if(!('IntersectionObserver' in window)) return;
-  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var els=[].slice.call(document.querySelectorAll('.hl,.sub h3 span,.stats b span'));
-  var R=document.documentElement; R.classList.add('mk-pre'); R.getBoundingClientRect(); requestAnimationFrame(function(){R.classList.add('mk-ready')});
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ var el=e.target, d=el.dataset.d||0; setTimeout(function(){el.classList.add('mk-in')},d); io.unobserve(el);} });},{rootMargin:'0px 0px -12% 0px'});
-  document.querySelectorAll('.stats').forEach(function(ul){ [].forEach.call(ul.querySelectorAll('b span'),function(sp,i){sp.dataset.d=i*140}); });
-  els.forEach(function(el){io.observe(el)});
-})();
-
-(function(){
-  if(!window.matchMedia||!matchMedia('(hover:hover) and (pointer:fine)').matches) return;
-  var c=document.getElementById('cur'), lb=document.getElementById('lb'), R=document.documentElement;
-  var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var x=-100,y=-100,cx=x,cy=y,raf=null, lab=c.querySelector('span');
-  var GRID={"b01":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffe1d1ffd3ccfecac8fee1d1ffe1d1ffe1d1ffe1d1ffded0ff94b6fbe1d1ffe0d0fee1d1ffe0d1fef9fcf1f9fcf1f9fcf1e5d8fbe3d5fde2e0eda59396b8b1b2ebe6f4efeaf6d4e5dcdae4d8f2f7eae5d9fbe4d8fbeaeee8b79f9bc2babaf4f8edf4f8ea6f6a55bb8f669aa598e5d9fbe4d8fbe2efe698b2b9809699c7e1e2cbd1b654281aa0503cb7ac9de5d9fbe4d8fbdcdecea9a898a4b0a0bbded3b3d4c9a8bbb2c09e90f5dfd4e5d9fbdfd6fbaea59b956e686a4031ebebddd8ebd3b9cfbfacc3b5f7fde5e5d9fbc6ccfabbb7ad3b3239695c60cbc5b7c9baab8261547c5f53f7f9eae5d9fbe2d7fbe2e2d67c7875a8a7a1e3e5d9afb0b4786665837a73ebf5f1e5d9fbe1d1ffdfcffddfcffddfcffddfcffdd7c9f3c7bbdec2b8dac2c4fbdbcefe"},"b02":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffdecffce6dafce9e4f8ede6f8ece5f8c4bad7aea6bd9f99a98f8c95d3c5eddecffceae4f8dcf1f1def2f1e3f4f1dfe2d7a5bcb7969d949da8a0b8b5cbdecffcece5f8fbfff1fbfff1fbfff1fafdf07f7c62956a4dba9d728f8c99decffcdddeeecde0eecedfedc3d8ebc9daea6351386a402d9d4e3ba3ae7bded8e5e0e0edc7daebcedfebcfe1ecdde4e074403b78413bb2222ae0d28cded7e8eae3f6e2e5daeef2e5f0f4e7f0f4e7f9fdeff4f5e7e5d2c8f8fce7e0d2f8e9e2f5c2c5bcc7c9c0c4c7bdcacdc3c1c4bacdd0c5e9ece0fbfff1e1d4f9e8e1f4c4c7bdcacdc3cacdc3c4c7bde3e6dae3e7dbf6faecfbfff1e1d4f9e1d5f8e6def4e6def4e6def4e6def4e6def4e6def4e6def4e6def4dccef8"},"b03":{"a":1.0,"c":"e1d1ffd8caf5beb3dddfd0fae1d1ffe1d1ffe1d1ffe1d1ffe1d1ffdecffcd4c9e8dfd8eae9dffae9dffadacef0c2b7d7b2aac2a29caec4b9dadecffce0d1fee9f6f1dbf1f1daf0f2e2ede6acaca9f6f2efb6a79ee9e0ebdecffce1d6f6edf3eff5f9eef7fbeff9fdeff1eadcbfa093885f51cab6badecffcebe7f3b1d0f5a8cbf6cddff3ebedefdad6d2a6938e85675bafaa8fded9e2ddcffaebefe5e5ebe5d9e4e6dce3e5d0d2d2b2aeb6aeaab1c5cdaadeded8e0d0feeff3e7eef2e6f7fbeef6faedf9fdeff4f8edeff3e9f3f6e9e5dbf6e0d1feebefe3d6d9cedcdfd3d5d8cddaded2fafef0fbfff1fbfff1e7def6e0d0fef0f4e8e3e6dae0e3d7e2e6dae0e3d7f6faecfbfff1fbfff1e7def6decffcdfd2f8dfd2f8dfd2f8dfd2f8dfd2f8dfd2f8dfd2f8dfd2f8dccef8"},"b04":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffded0ffc1c4fcdecffce1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffded0ffded0ffdecffccebee29690a1806b726b5354bbaeb2e4e5f1f2ebf2eeeaf2f1ebf2e7dbf5bdacca71666bac7871663b2db49e90e1e7e5d7e4e6d8e5e8edeee8ebe1f2ccbbde54433e978083543d37a2897bc4c1bac3c0b9c4c1bacecac3ece2f4d9c9ef150d13413a437970787e675ee8e4dce6e2daf1ece3f3eee4ebe1f2e4d5fb6f64637c726f8d8684b6afa8f8f3e9faf5ebfbf6ebfbf5ebebe1f3c1c8fac9dbeeb9d2efc9dbefbdd5f0cadbedd3e0ecd9e3ece0e7edebe1f2e4d5fcdbe4eddae4efdee5eddbe3ecd9e3eedce4ecf8f2ebf9f3ebeadff3decffcdecffcdecffcdecffcdecffcdecffcdecffcdecffcdecffcdbcdf9"},"b05":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffdecffce1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffccc9fdd2cafbe1d1ffdbddf0b1aab5ccc4d0ece6f1e8e7f2f5edf4f4ecf3e5e5f3e6daf6e1d1fecdd9e7ae8c83947d78ebebebebf0f0dfe9ede8ededf9f4edeadff4e1d1ffe0e3e5b8948cc3aeaae9eaebc1beb9bbb8b3d6d2cce4dfd9eadff4e1d1ffe2e4e581838629292dcccdcfe6e2dceae5dff1ede6f2ede6e9def3e1d1ffe8e8e77777766e6c6abdbab8f8f2ebf9f4ecf8f3ecfaf4edeadff4e1d1ffd1dfeebad2f0bdd5f1c0d6f0bdd4f0d9e2edf9f3ecf9f4edeadff4cbc8fde4dcf6ece1f8ebdff7eadef6ebe0f7eadff6ebdff6ebe0f7e2d5f9decefcccc8fbdecffcdecffcdecffcdecffcdecffcdecffcdecffcdbcdf9"},"b06":{"a":1.0,"c":"cadf93d7ef99e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee0f99dd1e897d8f09ad5ed98bed18dc2d68fbccf8cc0d48ec2d68fc6db91bfd28ec2d68fd8f19ae1fb9ee1fb9ee1fb9edbf39bd4e689d1eaa1e6ef72e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1f99ccbd888d1df9ae0f5aedbdf7ce3f495e1fb9eece69ee1fb9ee1fb9ee6e884c5c788c1c1cc9fa1b7cfcb9ce4d873f1dd9ffec59fe1fb9ee1fb9ee6eb89c9df99d0d1d9cbcbd8e3f3aeebc59bf8cf9fe6f29ee1fb9ee2f89ae8ec88cee698f2f6f2f3f5faeec497f6b48ae5f198e1fb9ee1fb9eeaea87efdc72ecda70ebe794edde8dedc978edd57de5f291e1fb9ee1fb9ee3f393e4e27be4df77e3e57fe1e57fe4f494e4f696e1fa9de1fb9ee1fb9ee1fb9ec2d68fc2d68fc2d58fc0d38ec2d68fc1d48fdcf59ce1fb9e"},"b07":{"a":1.0,"c":"cde3967c7f74d2ea96e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9e656956767d60e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ed3eb96cee595d0e796d4ec98d1e897d1e997d1e896d7ef99e1fb9ee1fb9edaf39bbbcd8cbbce8cc1d68fc0d38ec7dd92c1d58fc5d9919caa77a2b07edcf49bcce294c9df93cce294d8f09ad5ed99d6ee99d2ea957a82618b9377daf0a1bec2aec0ce9ac0d38ebfd28ec0d293bebeb8c2c2bac3cf9fdcf69cdbf39cc1d198c1d391c5da91c2d68fc5da91c6db92c1d58fcce294e1fb9edcf59cc1d58fc1d48fcee495d2ea97d0e796d2e997bbce8aaebf7fe1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ea5b282797d6e4f4f497d8660e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9e797e6baab789cde493595b4d"},"b09":{"a":1.0,"c":"c1d58de1fb9ee1fb9ed3e79dd8baeadedcc6e1fb9ee1fb9ee1fb9ee1fb9ec7dc90e1fb9ed3eb97d4eb97e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9eeed72ed0c39bc3c4bbc7c9bcc7da98c5da91cce294d8f19ae1fb9ee1fb9ee3ea6cc8ca60bfd38ebfd28ebfd28ec3d78fcde395d6ed99e1fb9ee1fb9ee0f6a7d7dac7d2d5c2d1d5c0d1e1a7d0e696d5ec98e1fb9ee1fb9ee1fb9edaf29bc3d790c2d78fc1d48fc3d790c2d78fd1e897d3ea97d0e796def89ddcf59cc9df93c8dd92c8dd92cadf93c5d990c9de92c6da91d3ea97e1fb9edef79cc8dd92cde395cbe093cfe595c9de93cde394c9df9380d4a1e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9edacad7d4ea98c6e597e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fa9fdbf49bdbe167e8f476"},"b08":{"a":1.0,"c":"e1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9edff99ddaf39bdbf49bdbf49bdaf39bdbf49bdbf39bdaf39be1fb9ee1fb9ee0f7a3d1dbb1cad4abcedea3cce294cae093cce394cce294def89de1fb9edbf29fbfcba0c1cda1bdcc98bed28dc3d890bfd38ec0d48ec7dc92ddf79ce0f6a7d6dac6d4d8c4d5d9c4d4d8c4d2deb1cfe696d1e897dbf59be1fb9edbf19fbbc4a0bece95cadf93cde395cbe194cce294cde495dcf69ce1fb9edbf1a0bec6a6bdcb97bacd8cbdd08dbfd38eb9cc8bc0d38ee0fa9ee1fb9edcf3a2c1c6adc1c7abbdc3a9c1c8acbcca99bbcd8cc8dd92e1fb9ee1fb9edef69fd0e0a4cfdfa4d1e1a5d1e1a5d3e79ecee495d0e796d9f29ae1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9ee1fb9e"},"b10":{"a":1.4068,"c":"e3d7ffe2d4ffe1d1ffe0d1fce1d1ffe1d1ffdfcffbe1d2fdd0c8dbcececae3d4ffe2d2ffd9ceedcdc5dae1d1ffe1d1ffd2c7e6d2c8e3bbb7c0ccccc8bfb3d6a097b0afa5c2a59cb6a79db9a49bb6aca2beddcdfad4c7eeb7afc4bfb3d6a198b1a198b2a79eb9ddcef8dbd5e4decff9e1d1ffe1d1ffe1d1ffcec3dfc5b8dd968ea4a79db8afa7bdc3c3c0cbc1ddc5bdd4d3cae2dacfedbcb1d2b3a8c7ada2c0c7badfd8c9f4cbc8ceb5b1bb7a7a7abfb7cfdbcdf5e1d1ffe1d1ffe1d1ffdfd3f6cbc7d0d3e3a6b2c0918989899b9b9cc4bcd4e1d1ffdbd0eddecffacec7da969695bac896cbdba1abb6909594969d9d9de1d1ffd1c7e2dacbf5beb6cd979797b0aeb4c3bcd0c1bec5c7c2cdaea6bee1d1ffe1d1ffe1d1ffddcff7ddcef9e1d1ffe1d1ffd3c5ebd1c6e7e1d1ff"},"b11":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d2fddbcff0e1d1ffe0d4f7e1d7f5e2d7f5e4daf7e1d7f5e3d8f6e6dbf9ded1f6cbc3d7dccdf8dbcff0d6d2d8cbcbc6cfcfcacfcec9c9c8c3e2dde5daccf4dacaf6e1d1ffd4c7e9c5c1c5c8c4c8c7c9b7c4cda4c4cea3c6cdacc3c5b3c6c8b6e0d1fcd4cbe2bfb8c3d0c5e0d5c6f0d4c5efd2c3ecd4c5efd5c6f0d4c5efdfcffdccc0e0d0c1e9d1c1ead0c1e9d0c1e9d3c4edd2c3ebcfc0e8d1c2ead6c7f1d2c3edbeb0d3c2b4d8cebfe7cebfe7cfc0e8cebfe7d2c6e5e2d6f7e2d3fde1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1fed1c9dccec7d7d4cddee1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffd9cbf3c5becfd6d0e0d1c8dfe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe0d0fed3c6ecc4bad8d1c5e8"},"b12":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe0d3f7e2d8f5e3d9f7e2d7f5e1d6f4e1d7f5dcd1efdfd3f6ddd0f5e1d1ffdbcef1d2c8e3d3c9e4d0c6e1d3c9e4dad3e4d6d1dbd9d1e5d6cde4e1d1fdd3c3edc4b6dac4b5dac3b7d3c6bbd5c3bdc5c2bec0d2cbdad2cadcdfd0fad7c8f2d1c2ead2c3ecd1cadad1cbd4d2cdd5d5ccdfe1d1ffe1d1ffe1d1ffd1c1eabfb1d4beb0d3c3b5d9c1b3d6bdafd2c1b3d7dfcffcdfd0fcd9cfead9caf5cfc0e8cfc0e8d0c1e9d6c7f1e1d1ffe1d1ffe1d1ffdecffbcec3e1d1c2ebc1b2d6c4b6dad5c6f0cec0e7cebfe7cebfe7d3c4edcebfe6dfcffcdfd0fcdbcdf3dfcffce1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffdacef0ccc4d7dfcffce1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe1d1ff"},"b13":{"a":1.0,"c":"e1d1ffe1d1ffe1d1ffd3c8e9d1c7e2e1d1ffe1d1ffe1d1ffe1d1ffe1d1ffe0d3f8e1d7f4e4d9f7e1d7f5e1d7f4e5daf8e2d8f5e1d6f4dfd5f2e6d9ffdccff3d7cde8d2c8e3cdc9d1cfcccecfccd0d4ceddd2c8e3d2c8e2e7daffd4c5efc4b5dac1b3d7d7cfe2d6d0dcd7d2ddd7cce8d5c6f0d8c8f3e1d1ffd9d1e1cdcfc1d1d3c3d3cddad0c1e9d2c3ecd1c2ebcfd0c5cccdc1d5d2d4d9caf4d0c1e8cfc1e7dfcffbe1d2fee1d1ffe1d1ffe1d1ffe1d1ffe1d1ffd0c9d7bec0afc0c2b0bdbeaebebeb1c1b3d7beb0d2ddcdfae1d1ffe1d1ffdbcbf7d0c1e9cfc0e8d2c3eccfc0e9decefbe1d1ffe1d1ffddcef8dad1e9e1d1ffd2c8e3dfd7eadfd5f1dfd0fbe1d1ffe1d1ffe1d1ffdaccf5cec4e1e0d1fed2caddd1cadacfc8d9dfcffbe1d1ffe1d1ffe1d1ffe1d1ffe1d1ff"},"b15":{"a":1.0026,"c":"fffffffffffffffffffffffff6f7f7f6f7f7e3e3e3e5e5e5fdfdfdfffffffffffffbfbfbfefefefafbfcc9b7db948aabe2e2e3eeeeeefffffffffffff4f4f4eae9eadbdadfd9dde9bd9ed48974a3c2bbd2d6d0e3d8d3dbffffffffffffd2cfd9dad8ebc4bdd5d1c5e4cdbae3ccb7e37964869d8da5ffffffffffffd3c6d89da396aaadaab3a1cabda6d563596b5f496ab3a4bdeae4efffffffe4dee799b57693a1849a90b0766c924345424f4255c1bfc3fefdfeffffffe4e5e3a3ca74a6c3859199975d5c6c50495447434979717dfffffffffffff6f6f59cb38096b3768c988e4c525354485954465b907f98fffffffffffffbfbfbc6addeb6bab263736332422a767378cecbcffffffffffffffffffffcfcfce5dbeeffffffcacbccd1d4d0ffffffffffffffffffffffff"},"b16":{"a":1.0,"c":"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfdfcedf6d5cedca4d0e69df7f6e6ffffffffffffffffffffffffb5c28ac9b370aeaa5fb2c456b7b362b6b164dcd98ce8f0c6ffffffffffffa3b19a7e8358bfba5fadc153aeb35cbcdd59859a60aab2aeffffffffffffedf3e77065936c706ab3c35baec46f8c83b093959fe3ecdbfffffffffffff0f3f39eac567b6f84859a7ea4bc87797773a9a17be6e4e3ffffffffffffffffff7570836454976d6188827baf5d4f888a8ba6eeeeedffffffffffffffffffd4d6d678708f9da9585e5a5c88839fd7d5dcffffffffffffffffffffffffffffffe4eae0696f81b4aec9fbfbfbffffffffffffffffffffffffffffffffffffffffffedeeefffffffffffffffffffffffffffffff"},"b14":{"a":1.7778,"c":"f6f6f6fafafafafafaf7f7f7f3f3f3f5f5f5f7f7f7fafafafafafaf5f5f5dcdcdcedededfafafafafafafafafafafafafafafafafafafafafafafafab8b8b8a8a8a8aeaeaea5a5a59a9a9a9e9e9faeaabaadabb9f8f8f2fafafacdcdcdbcbbbcb6b6b6b2b2b2d1d1d1b9bdafb0aac58d8a8dbaad65cdd0b7d1d1d1c7c7c7c3c3c3d5d4d5e6ebd5b29f748f888d8a89748c9a66b8b2d1d4d4d4d0d0d0e6e6e6efefefb3b2a79e9e649da45ca2b1698e89aececaddfafafafafafafafafafafafadadada71657e8c946aa2a595968ea5d9d3b4fafafafafafafafafafafafafafafaafa7aca09aa6655f7f776d86a3a0acfafafafafafafafafafafafafafafab4bb86968889786d9c71627dc3c1c6fafafafafafafafafafafafaf9f9f9c1bec67464a7817c73615a72e7e7e8"},"d01":{"a":0.7454,"c":"61cafd61cafd61cafd7ad2fc8dd8fcfffffffce2f4f69cd9fcdff2ffffffb8e7fdd3f0fdeff9fe9fdefd96dbfcfefafdfbd8f0f6a8ddfbdbf1ffffffd8f2fdbbe8fde8f7fdc4ebfda1defbfefafdf58ed4f47dcdf587d1fffcfe81d4fde8f7fdf6fcfeb0e4fd8fd9fbfef5fbf476cbf46fc9f471c9fce1f466ccfcb2e5fcc2eafc92dbfd62cafcf79fdaf479ccf478ccf478ccf693d6fdf5fbfef6fbfce3f4fdeff9fbdaf1fffffff5fcfebfe9fdd9f2fefffffffffffffac7eaf476cbf689d2fef4fbc4ebfcb6e6fb6ecefb72cffbf5fcfffcdff3f479ccf484d0f57fcef9bce5eef9fd8ad7fc75d0fa7dd2fad2effdfdeef8f8b1e1f475cbf47bcdfce7f5d7f1fc6fcefb6fcefb72cffaa2dffbfac5e9f57fcff46dc8f46dc8f8b4e27bd2fa83d5fa6bcdfb72cffa6fcefa"},"d02":{"a":0.6606,"c":"c6d8e4e7e4e8eaeaeaf4f4f3f8f8f7f9f9f9f8f7f7f7f7f7f6f7f7f4f5f5676561706d6a5e5a57686b6f6e73795c6063575f63535e65515e6852606a8b8e9391959a8b8e938c969f8e9da985939e889eae91a2aa7d8d954756606462606b68666b69686e757c6c7a866e7a84363739323537555e62495c676a6c6e807f8088858574777a6169705c6c7854423b3c2d2556656d5469732426283e3b3a534d4748423b7a7677a5a8b6ababb9a39da49b9faa6e838d514e4949484537353258585daba9b77f83906f85a07980938c727ea5a4af625b4f5b5349423c368d85898f8381796e7b6c5b7773536a88687996919c675c4e574f4352493f594c406f5647968291987d8f6d5b766473888c7e70dec2bfd4d2cfd0cfcdd1d0ced6d2cfededf0edecf0eaeaeeeeeef1dbd9d5"},"d03":{"a":0.7996,"c":"f6d3ebe5b7c2eb9f86f9d1ecfedefffcd0fadab3bbdab7b5fedefffeddfef1cde3bc7652cd6622eaa8a3fed7fdf5d6e0e8b365f4ac40e9c3acfed4fdfee0ffecacb9ea8aafe38e7ef9dbf5f9d2f4f1c7befaaf3febd2b1f5d9e6fed9fdeacbcddeac96eab9aafde0fdfbecdff4e7ddf2dce9fee1fffee0fff7d3f5d1c0b7f4dfd3f7dfe2fdd9fceee9e2f1edd9e9e4d8fde2e4fed6fdefbcecd9b5bbedb8d7efc6e2fde3eff2f1cff6f4e6f4f1e6fdebdcfddffcfccefaf0c7d2eecfcafde0fcfedfffd7c9c4bbacbafddffefcddfbfddefdfed7fdeecaa0e2d4b2f7e8d1f7d0f6c7bbc6655564f7dbf7fdddfdfedffffedbfee7c083f8c64ef0d073fee2fed3cea066665e595758c0b7aaf8e1e1fdcffcf6d6cfeec3adf7d7e5fee0fff4e0d4f4e0d0f4e0d2f3d3d1f8dbe7"},"d04":{"a":0.7096,"c":"bad6d4c6b385c0c7adb5dce46dcadd74ccdfa9d1dba5ced89bd2dfa7d8e4c9c2a6daab63dbaf68d1cab0accdd8bfb1b7c59896af938da4b1b3a3d5e1cfceb5dac596cbc4a6b9bfa9afad92a0cdd7aeb6b4625351675452aecad0b2dce5c2b8abc6ccc7cb6f3dc9703fcb997baac9cfabd0d7a7ced6b4d0d6add4dca4c1c5a8c4c6c19176aa7d63b7d5dab5d3c972a29863afb997d2dfb6cfcdcfb38ce09b54d4c09bbac9c3c0dfe5cfa073c0804abd794e96c9d3b6dee7d1b588cbb17cccc4a889aeb0c3dedfd0c7a8a6bcb182b6b6b8d8dbabdae5a8d0d9a5cfd8c6bfa5c5c4b2c6b3a3bdd0bdbfab68bfa761bdd9d5a0d2dfbaa986cb9352dd9d55bb9f72b9cfd1c8ceb4bda547c7ab46c0d1bbb2d7dd63c1d450bbd04abad04bbbd1a4d1d7b5dadebec49db7bf96bfd3c1"},"d05":{"a":0.9217,"c":"d33b4bd84553ed5f6cf87784fc838cf06974db92aaceba96d4d183dddc84d63f4fd33c4beca4b5e9b2bbf1a1b3dd677af5becafdf3b2fbebb0f8edaad73e4ece3043f1bdd1c1644ce9a196d9bbbaddbcc1f6cde8f7ddcaf9ecadd43447cf384efccee9d57c73e5aaa8eba06ce9ae89fad5d5faeda4fcf692cf2a3fd95c72e5cbbdeccfc4fad3e8ebe1ceecd7e3f1e0a7e8e773eeed77cb1e37da7689c08b80e2aeaeebdcd4e4dbb4ecd7d8eedef8eee3f1fcfd84c50e2ce9a0ade2c0b1f8cde6fadae5efdce2f8eacef2ebd2f0e7e6fdfd80c9324bddae9ce6b472dccac9b89fadfad1f8fce8b3ccbc85f0e78ff9ed96e0a8a1c48f8adf8a7ee8c9bbc9c2a9fbd6f3f7e5a4c09f83ebc9b9ebaae4e0b3a6daa69da67563c48e86b38886caa2b2cba4bdc4a78fefcdc8df95db"},"d06":{"a":0.8673,"c":"3b3b3b3e3e3e3f3e3f6a41386d433a424342666456686149534f42a0917e2b28283b3836675f567e786f798b8ea09993aba6a15d605f3532329e8e794d3a2b655140ad8762b67c46b39e91af8f86694b408c837c49433da08d725242337a5d46a58d71b29983a16545a9826d989d96909996415660a38970725737907f60c5775ca37e6fa47863a69386a776538b6c5a4b61677b6d5b574530b18a69d78f7aa97256ae6b36a19382b39d84a68f6e747165726252443528d8ab90edb49bac9686918574ab7c55aa9785a47f499d81583d322b2e2318d4a287ce9677b6937f8e826a7373636f7c796f68595c5548544536382d22dca283c0805ec4876b9a9682917e62957b5b9e8362a88c6bbea07c9c816ddc9d7ebf8362987252917658967c5ca18565ab8f6fb89b79c5a785"},"d07":{"a":2.0426,"c":"ff7ddffe78deff6cdbff67daf881dbdad5cfd1c2b0a0806b966f58926a53ff7fe0fe8ce2ff70dcff67dae7b9dbd2c6b6c1b0a28f674f90796a8f6d58ff67daff67daff67daff67daf47fd7d8cdc3ac94858d6851888a88897569b3caf4ade2fa9adbf99bdcf997daf9d1d8d59c81718b644fa3adb0928881f6a3e8f4b7edf3b6edf1b3ecefa0e8ddd7d28f72648c6354b2aaa3b5a69dfe8ae2fe98e5fd9ee6fe9ce6d873dedbd2cd94605f8d4b4cb9a598c7b6abff75ddff78defe79defe7cdfe171dec7cfd26d7997975c60c0afa2bd9f9bfd8be2fd8ae2fe83e0fe7edfd47be048bef357a3d2c3758ad09ba3df819efd98e5fd92e3fd8de2fd8be2b587e460c0e884787fac5b69c96982c86b84fe73ddfe76ddfe74ddfe79deff6bdbd5cbc5d3cac4d2c7c1c8bab6c8b1b1"},"d08":{"a":2.1739,"c":"d8f2fddff4fde4f6fde5f6fdedf9fdfffffff1fafed2effcceeefbe7f7fddbf3fdc9ecfbd0effce9f7fdffffffffe2f8fed7f5eff8fcf9fdfffffffffffefffedef6fee1f7fed1f3fff7fdffc7f1fe95e4a2d7f4ffffffffffffb0e4fb74bef38ac9f477c3f45dc7f7b79ee9ff9fe7b298e8ffe4f8ffffff9cddfa66cbf768cbf76fcef76bccf7aa9eeaff6bdb5e96e7fb8ee3fff9feaee3fb61c9f763caf762c9f75dc7f788a4edfe70dccd82e2fcb1ebffd8f5ecf8fdcceefcbde8fbfeffffffffffeacef3fa75dda38ce2fa8ae0ffe1f7edf9fed5f0fccdeefcddf3fdffffffc6daf8ae80e3978fe7c29ae8ffbceef2fbfed7f1fcd7f1fcd2effcffffffecf2fcf5daf6d8e4f9e3e3f5fde3f8f3fbfed0effcc1eafbc9ecfbfffffffffffff1fafecfeffbd2effce5f6fd"},"d09":{"a":0.9496,"c":"daf0ffdaf0ffaee1fd71cdf8a1ddfbdaf0ffdaf0ffdaf0ffdaf0ffdaf0ffdaf0ffdaf0ff9bdbfc52c2f534b8f62cb5f6c2e8fdc5e9fd2eb6f684d3fadaf0ffdaf0ff35b8f628b4f20cabf427b4f430b8f724b3f522b3f65bc6f9e2eaece3ecee34b7f322b2f328b4f58bd7fa2cb7f78cd7f9c7ebfb7bd0faf6e0c582c3e531a9ee27a5ee0da0ed07a9f522b1f232b8f61bb0f567c9f9f8e2c82c9bda3c9ac32999e70989dd4ea6d741b9ec2bb5f5b9e5fdccebfef8e2c75a8b7b3f9aa51999ed6caedd93bbd3e0e3dccdebfedaf0ffdaf0fff5ddc12aa7e54aadecd4e0edcdd5de8fb9d1ece6dadaf0ffdaf0ffdaf0fff6e1c644b0ee82bee9a7cae869a7d66a9fb4eee8dbdaf0ffdaf0ffdaf0fffeeedbb3c9d19bb8ca8bb0c88eabbdcac2b5eae3d7daf0ffdaf0ffdaf0ff"},"p01":{"a":0.7071,"c":"feea93fdd98afbd788dfeb7be5e184fad1a0fef2b1fde9aafeeaa7feeda7fcb54dfc5d30e2bd62cde161c9de5ef6ba83fbc585eecf8af6b1a4fcd7a8fdeb99faac6fe3eb91a8cb2dd0e36ad6b9b6fab690fedea7fecda7fee2a7e2deadf3be9bfee799fedd8dfdd387fde195d0d9bddfed94dae874e5ef83f6df9ff8b498fddf8efb9432fc9259fbcd85f6c888dfec7fb1cf3ec1d950fbf0a9fbd38afef394fdaf6dfebe78d4d6bbf8ac91f3f297cdca57e1e175f1e291fdd0a7fcddaafde6bbfaf5aeead7a8fcc993fde47afdd482fcca82fbc9a0f6aea4fac4a2deea79d9e987d9e5c2feeaa7fdbf6dfc421bfdb874fdeda6f1f093e2ec84c2db51cadf5eefdb8efdcba7fbe39afdef83f9e5a1fedca7febaa5e5ed92b4d23ddae874fbbfa2f7b1a5fdd6a7fef5a8ffffa7"},"p02":{"a":0.9496,"c":"daf0ffdfdecce4d6b0dee5dfdaf0fedaf0ffdaf0ffdaf0ffdaf0ffdaf0ffdee5f4eea65cf49e09e99709a36845d9b37fe0c9d9e0c9d8dfc8d7dce2f1e1dae9e68927ff9d11d56826af8585c27372e6a4b4e5a2b2e39fb0ddd4e3e0dae9e9aab3eaad9bc36776b16e84d69183e1b86de3ae94e1a2aeddd4e3e0dae9c0b9d3b2abc0acbeddc6b8d0ddb475e3c745c5993fd3aa65dcd2e2e1dae9c1899bbd705ebaccc1cdb3c1d9a879e0a56fdf6c61d99d8bddd3e2e2dae9e5a0a7d07985d7a8aadeaebbdba2b5c897adb6929aab849eddd3e2e1ddecf0bdcbeeb8c7edb7c6af97b35e6b9b57699963618478718eded8e7daf0ffdaf0ffdaf0ffdaf0ffb0cadf9dadc4838f7a6b625e885080d9effedaf0ffdaf0ffdaf0ffdaf0ffc9e1f4a3bdd8a1bcd7bfc9e2d3d2edd9f0ff"}}, G=10;
-  var PAL=[['#6b4eff','#fff'],['#e1fb9e','#171717'],['#171717','#fff'],['#ffffff','#171717']];
-  function lum(h){var v=[0,2,4].map(function(i){var c=parseInt(h.substr(i,2),16)/255;return c<=.03928?c/12.92:Math.pow((c+.055)/1.055,2.4)});return .2126*v[0]+.7152*v[1]+.0722*v[2]}
-  function ratio(a,b){var x=lum(a),y=lum(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
-  var cache={};
-  function pick(hex){ if(cache[hex])return cache[hex];
-    var best=null,bs=0; for(var i=0;i<PAL.length;i++){var r=ratio(PAL[i][0].slice(1),hex); if(r>=3.2){best=PAL[i];break;} if(r>bs){bs=r;best=PAL[i];}}
-    return cache[hex]=best; }
-  function under(shot,px,py){
-    var k=shot.dataset.src.replace(/^img\/|\.webp$/g,''), g=GRID[k]; if(!g)return null;
-    var r=shot.getBoundingClientRect(), ba=r.width/r.height, iw,ih,ox=0,oy=0;
-    if(g.a>ba){ih=r.height;iw=ih*g.a;ox=(iw-r.width)/2;} else {iw=r.width;ih=iw/g.a;oy=(ih-r.height)/2;}
-    var gx=Math.min(G-1,Math.max(0,Math.floor((px-r.left+ox)/iw*G))), gy=Math.min(G-1,Math.max(0,Math.floor((py-r.top+oy)/ih*G)));
-    var i=(gy*G+gx)*6; return g.c.substr(i,6);
-  }
-
-  R.classList.add('has-cur');
-  function loop(){ cx+=(x-cx)*.28; cy+=(y-cy)*.28; if(Math.abs(x-cx)<.1&&Math.abs(y-cy)<.1){cx=x;cy=y;raf=null;} else raf=requestAnimationFrame(loop);
-    c.style.translate=cx+'px '+cy+'px'; }
-  addEventListener('pointermove',function(e){
-    if(e.pointerType!=='mouse')return;
-    x=e.clientX; y=e.clientY;
-    if(RM){cx=x;cy=y;c.style.translate=x+'px '+y+'px';} else if(!raf) raf=requestAnimationFrame(loop);
-    var open=lb.classList.contains('open'), t=e.target;
-    c.classList.toggle('on',!open);
-    var sh=!open&&t.closest('.shot'); c.classList.toggle('img',!!sh);
-    if(sh){ var hx=under(sh,x,y), pc=hx?pick(hx):PAL[2]; c.style.backgroundColor=pc[0]; lab.style.color=pc[1]; }
-    else { c.style.backgroundColor=''; }
-    var ln=!open&&!sh&&t.closest('a:not(.btn)'); c.classList.toggle('lnk',!!ln);
-    if(ln){ lab.textContent=ln.dataset.cur||(ln.closest('.snav')?'Перейти ↓':'↗'); lab.style.color=''; }
-    else if(sh){ lab.textContent='Открыть'; }
-  },{passive:true});
-  document.addEventListener('pointerdown',function(){c.classList.add('down')});
-  document.addEventListener('pointerup',function(){c.classList.remove('down')});
-  document.addEventListener('mouseleave',function(){c.classList.remove('on')});
-  document.addEventListener('mouseenter',function(){if(!lb.classList.contains('open'))c.classList.add('on')});
-  new MutationObserver(function(){ if(lb.classList.contains('open')) c.classList.remove('on','img','lnk'); }).observe(lb,{attributes:true,attributeFilter:['class']});
-})();
-
-(function(){
-  var R=document.documentElement, btn=document.getElementById('themeBtn'), K='tasya-theme', mq=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
-  try{ var saved=localStorage.getItem(K); if(saved==='dark'||saved==='light') R.setAttribute('data-theme',saved); }catch(e){}
-  function isDark(){ var t=R.getAttribute('data-theme'); return t?t==='dark':!!(mq&&mq.matches); }
-  function sync(){ var d=isDark(); R.classList.toggle('is-dark',d); btn.setAttribute('aria-label',d?'Включить светлую тему':'Включить тёмную тему'); btn.title=btn.getAttribute('aria-label'); }
-  btn.addEventListener('click',function(){ var n=isDark()?'light':'dark'; R.setAttribute('data-theme',n); try{localStorage.setItem(K,n)}catch(e){} sync(); });
-  if(mq&&mq.addEventListener) mq.addEventListener('change',sync);
-  new MutationObserver(sync).observe(R,{attributes:true,attributeFilter:['data-theme']});
-  sync();
-})();
-
-(function(){
-  var nav=document.getElementById('snav'), head=document.querySelector('header'), links=[].slice.call(nav.querySelectorAll('a'));
-  var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function onScroll(){
-    var show=head.getBoundingClientRect().bottom<0; nav.classList.toggle('show',show);
-    var mid=innerHeight*0.35, cur=null;
-    links.forEach(function(a){ var el=document.getElementById(a.dataset.s); if(el&&el.getBoundingClientRect().top<=mid) cur=a; });
-    if(innerHeight+scrollY>=document.documentElement.scrollHeight-4) cur=links[links.length-1];
-    document.documentElement.dataset.sec=cur?cur.dataset.s:'';
-    links.forEach(function(a){ a.classList.toggle('act',a===cur); if(a===cur) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
-  }
-  addEventListener('scroll',onScroll,{passive:true}); addEventListener('resize',onScroll); onScroll();
-  links.forEach(function(a){ a.addEventListener('click',function(e){ var el=document.getElementById(a.dataset.s); if(!el)return; e.preventDefault();
-    el.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'}); history.replaceState&&history.replaceState(null,'','#'+a.dataset.s); }); });
-})();
-
-(function(){
-  var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var FINE=window.matchMedia&&matchMedia('(hover:hover) and (pointer:fine)').matches;
-  /* 4. morph */
-  var mo=document.getElementById('morph');
-  if(mo){
-    var steps=[].slice.call(mo.querySelectorAll('.step')), stage=mo.querySelector('.morph-stage'), timer=null;
-    function set(k){ mo.classList.toggle('is-b',k==='b'); steps.forEach(function(b){ var on=b.dataset.k===k; b.classList.toggle('on',on); b.setAttribute('aria-pressed',on); }); }
-    steps.forEach(function(b){ b.addEventListener('click',function(){ stopAuto(); set(b.dataset.k); }); });
-    if(FINE){ stage.addEventListener('mouseenter',function(){set('b')}); stage.addEventListener('mouseleave',function(){set('a')}); }
-    function stopAuto(){ if(timer){clearInterval(timer); timer=null;} }
-    if(!FINE&&!RM&&'IntersectionObserver' in window){
-      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting&&!timer){ timer=setInterval(function(){ set(mo.classList.contains('is-b')?'a':'b'); },2600);} else if(!e.isIntersecting) stopAuto(); }); },{threshold:.5}).observe(stage);
-    }
-    set('a');
-  }
-  if(!FINE||RM) return;
-  /* 3. tilt on square posts of Bashnya */
-  [].forEach.call(document.querySelectorAll('#s-bashnya .shot.sq'),function(el){
-    el.classList.add('tilt');
-    el.addEventListener('pointermove',function(e){
-      var r=el.getBoundingClientRect(), px=(e.clientX-r.left)/r.width, py=(e.clientY-r.top)/r.height;
-      el.classList.add('tilting');
-      el.style.transform='perspective(900px) rotateY('+((px-.5)*8)+'deg) rotateX('+((.5-py)*8)+'deg) translateZ(0)';
-      el.style.setProperty('--gx',(px*100)+'%'); el.style.setProperty('--gy',(py*100)+'%');
-    });
-    function reset(){ el.classList.remove('tilting'); el.style.transform=''; }
-    el.addEventListener('pointerleave',reset); el.addEventListener('pointerdown',reset);
-  });
-  /* 2. paw prints in Doggo */
-  var dg=document.getElementById('s-doggo'), lb=document.getElementById('lb'), lx=null, ly=null, side=1, n=0;
-  var PAW='<svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="16" rx="5.2" ry="4.4"/><ellipse cx="5.2" cy="10.2" rx="2.2" ry="2.9" transform="rotate(-20 5.2 10.2)"/><ellipse cx="9.3" cy="6" rx="2.2" ry="3" transform="rotate(-6 9.3 6)"/><ellipse cx="14.7" cy="6" rx="2.2" ry="3" transform="rotate(6 14.7 6)"/><ellipse cx="18.8" cy="10.2" rx="2.2" ry="2.9" transform="rotate(20 18.8 10.2)"/></svg>';
-  addEventListener('pointermove',function(e){
-    if(e.pointerType!=='mouse'||lb.classList.contains('open')) {lx=null; return;}
-    var r=dg.getBoundingClientRect();
-    if(e.clientY<r.top||e.clientY>r.bottom){lx=null; return;}
-    if(lx===null){lx=e.clientX; ly=e.clientY; return;}
-    var dx=e.clientX-lx, dy=e.clientY-ly, d=Math.hypot(dx,dy);
-    if(d<46) return;
-    var ang=Math.atan2(dy,dx), nx=-Math.sin(ang), ny=Math.cos(ang); side=-side;
-    var p=document.createElement('div'); p.className='paw'; p.innerHTML=PAW;
-    p.style.translate=(e.clientX+nx*9*side)+'px '+(e.clientY+ny*9*side)+'px';
-    p.style.rotate=(ang*180/Math.PI+90)+'deg';
-    document.body.appendChild(p); setTimeout(function(){p.remove()},1350);
-    lx=e.clientX; ly=e.clientY;
-  },{passive:true});
-})();
-
-(function(){ var b=document.getElementById('toTop'); if(!b)return;
-  var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  b.addEventListener('click',function(){ scrollTo({top:0,behavior:RM?'auto':'smooth'}); var a=document.querySelector('header .links a'); if(a) setTimeout(function(){a.focus({preventScroll:true})},RM?0:600); });
-})();
-
-(function(){
-  /* collage opens the matching work */
-  [].forEach.call(document.querySelectorAll('.hcard'),function(c){ c.addEventListener('click',function(){ window.tasyaOpen&&window.tasyaOpen(c.dataset.open,c); }); });
-  /* Tasya's local time */
-  var clocks=[].slice.call(document.querySelectorAll('.clock'));
-  try{
-    var fmt=new Intl.DateTimeFormat('ru-RU',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Yekaterinburg'});
-    var tick=function(){ var t=fmt.format(new Date()); clocks.forEach(function(c){c.textContent=t; c.parentNode.hidden=false;}); };
-    tick(); setInterval(tick,20000);
-  }catch(e){}
-})();
-</script>
+<script src="assets/js/image-data.js?v=20260923-3" defer></script>
+<script src="assets/js/ui.js?v=20260923-6" defer></script>
+<script src="assets/js/main.js?v=20260923-6" defer></script>
 
 </body>
 </html>

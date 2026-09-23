@@ -1,0 +1,5 @@
+memory-bank/
+tmp/
+__pycache__/
+*.pyc
+
