@@ -13,7 +13,7 @@
 - `assets/js/image-data.js` — размеры адаптивных изображений.
 - `img/` — полноразмерные WebP-изображения.
 - `img/s/` — адаптивные версии шириной 600 и 1200 px.
-- `img/works/` — новые работы, рассортированные по проектам `bashnya`, `doggo` и `dayz`.
+- `img/works/` — новые работы, рассортированные по проектам `bashnya`, `doggo`, `mirabella`, `dayz` и `personal`.
 - `img/s/works/` — адаптивные версии новых работ.
 - `assets/video/` — видео наружной рекламы «Башни» и Doggo.
 - `Tasia_Chernyakhovskaya_CV.pdf` и `Tasia_Chernyakhovskaya_CV.docx` — скачиваемые версии резюме.
